@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="canchas/list">
+        <put-attribute name="body" value="/WEB-INF/views/canchas/list.jspx"/>
+    </definition>
+<definition extends="default" name="canchas/show">
+        <put-attribute name="body" value="/WEB-INF/views/canchas/show.jspx"/>
+    </definition>
+<definition extends="default" name="canchas/create">
+        <put-attribute name="body" value="/WEB-INF/views/canchas/create.jspx"/>
+    </definition>
+<definition extends="default" name="canchas/update">
+        <put-attribute name="body" value="/WEB-INF/views/canchas/update.jspx"/>
+    </definition>
+<definition extends="default" name="canchas/findCanchasByIdSucursalAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/canchas/findCanchasByIdSucursalAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="canchas/findCanchasByStatus">
+        <put-attribute name="body" value="/WEB-INF/views/canchas/findCanchasByStatus.jspx"/>
+    </definition>
+</tiles-definitions>

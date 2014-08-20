@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_cancha_domain_Partido" items="${partidoes}" z="Mc25bIjeKTuvGa6BxgBUU0WuKfA=">
+        <table:table data="${partidoes}" id="l_com_raze_cancha_domain_Partido" path="/partidoes" z="5ICyTfxrUpbzCbE7BKrxFEBUzFE=">
+            <table:column id="c_com_raze_cancha_domain_Partido_idCancha" property="idCancha" z="x3iUtxpHVaBgIJqy1Gb+EvPSz3E="/>
+            <table:column id="c_com_raze_cancha_domain_Partido_idArbitro" property="idArbitro" z="cq3XgFIuuGMY+KXV33tyHa9ZRcE="/>
+            <table:column id="c_com_raze_cancha_domain_Partido_idTorneoEquipoLocal" property="idTorneoEquipoLocal" z="gmR3Ydr82aRX2k0hcIdf/zj9/rg="/>
+            <table:column id="c_com_raze_cancha_domain_Partido_idEquipoLocal" property="idEquipoLocal" z="dcZwbww8W/4r5Efugo/x1Z14Alk="/>
+            <table:column id="c_com_raze_cancha_domain_Partido_idTorneoEquipoVisitante" property="idTorneoEquipoVisitante" z="Fh5YxyS3XP9XBJzvRgnI8Z+ruWs="/>
+            <table:column id="c_com_raze_cancha_domain_Partido_idEquipoVisitante" property="idEquipoVisitante" z="oIrsCCuV3f/I7VWTXe9WmaaixWo="/>
+        </table:table>
+    </page:list>
+</div>

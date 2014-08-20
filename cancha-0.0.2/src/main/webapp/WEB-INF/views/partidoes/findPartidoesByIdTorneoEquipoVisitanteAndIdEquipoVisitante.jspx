@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByIdTorneoEquipoVisitanteAndIdEquipoVisitante" id="ff_com_raze_cancha_domain_Partido" path="/partidoes" z="8aqUIjlEt8lxUIn3kxs3f66ZNRs=">
+        <field:select disableFormBinding="true" field="idTorneoEquipoVisitante" id="f_com_raze_cancha_domain_Partido_idTorneoEquipoVisitante" itemValue="id" items="${torneos}" path="/torneos" required="true" z="fnPWzEfcdtZ63jehXauvtJ7BNCM="/>
+        <field:select disableFormBinding="true" field="idEquipoVisitante" id="f_com_raze_cancha_domain_Partido_idEquipoVisitante" itemValue="id" items="${equipoes}" path="/equipoes" required="true" z="s+o1sweI1J/l/5b+xipS1LuPMPM="/>
+    </form:find>
+</div>

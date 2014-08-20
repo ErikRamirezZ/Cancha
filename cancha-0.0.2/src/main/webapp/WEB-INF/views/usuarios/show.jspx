@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_domain_Usuario" object="${usuario}" path="/usuarios" z="6W8zfrwfqe5/pY6TGZtuRO3aHYs=">
+        <field:display field="idEmpresa" id="s_com_raze_cancha_domain_Usuario_idEmpresa" object="${usuario}" z="SScaWag4B/tzQ+FUl4qMgoUZLGY="/>
+        <field:display field="usuario" id="s_com_raze_cancha_domain_Usuario_usuario" object="${usuario}" z="0pvOZ+qkZ5DCc7NvFgpfp75KIow="/>
+        <field:display field="contrasena" id="s_com_raze_cancha_domain_Usuario_contrasena" object="${usuario}" z="SoIfkOi69x+8CkYuVEzx7L0sRtE="/>
+        <field:display field="intentos" id="s_com_raze_cancha_domain_Usuario_intentos" object="${usuario}" z="0fyOAEWwpZU7h4sHKv/UBl+Fz2E="/>
+        <field:display date="true" dateTimePattern="${usuario_ultimafechaacceso_date_format}" field="ultimaFechaAcceso" id="s_com_raze_cancha_domain_Usuario_ultimaFechaAcceso" object="${usuario}" z="V+8GjFceS4pOZxGPnY5t1oWhTVo="/>
+        <field:display field="status" id="s_com_raze_cancha_domain_Usuario_status" object="${usuario}" z="w+fNbcu2L4FB7zhqlSqvQvmpH+Y="/>
+        <field:display date="true" dateTimePattern="${usuario_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_cancha_domain_Usuario_fechaCreacion" object="${usuario}" z="l0ZhcEy/qXdhdh7Q1nTwLLawsG8="/>
+        <field:display date="true" dateTimePattern="${usuario_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_cancha_domain_Usuario_fechaModificacion" object="${usuario}" z="7RXS7OP0UOJIUbTeaFsHX6s/ue4="/>
+    </page:show>
+</div>

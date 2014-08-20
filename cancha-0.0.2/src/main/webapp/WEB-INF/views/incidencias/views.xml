@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="incidencias/list">
+        <put-attribute name="body" value="/WEB-INF/views/incidencias/list.jspx"/>
+    </definition>
+<definition extends="default" name="incidencias/show">
+        <put-attribute name="body" value="/WEB-INF/views/incidencias/show.jspx"/>
+    </definition>
+<definition extends="default" name="incidencias/create">
+        <put-attribute name="body" value="/WEB-INF/views/incidencias/create.jspx"/>
+    </definition>
+<definition extends="default" name="incidencias/update">
+        <put-attribute name="body" value="/WEB-INF/views/incidencias/update.jspx"/>
+    </definition>
+<definition extends="default" name="incidencias/findIncidenciasByFechaCreacionBetween">
+        <put-attribute name="body" value="/WEB-INF/views/incidencias/findIncidenciasByFechaCreacionBetween.jspx"/>
+    </definition>
+<definition extends="default" name="incidencias/findIncidenciasByFechaCreacionBetweenAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/incidencias/findIncidenciasByFechaCreacionBetweenAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="incidencias/findIncidenciasByFechaCreacionEquals">
+        <put-attribute name="body" value="/WEB-INF/views/incidencias/findIncidenciasByFechaCreacionEquals.jspx"/>
+    </definition>
+<definition extends="default" name="incidencias/findIncidenciasByFechaCreacionEqualsAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/incidencias/findIncidenciasByFechaCreacionEqualsAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="incidencias/findIncidenciasByIdSucursal">
+        <put-attribute name="body" value="/WEB-INF/views/incidencias/findIncidenciasByIdSucursal.jspx"/>
+    </definition>
+<definition extends="default" name="incidencias/findIncidenciasByIdSucursalAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/incidencias/findIncidenciasByIdSucursalAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="incidencias/findIncidenciasByIdUsuario">
+        <put-attribute name="body" value="/WEB-INF/views/incidencias/findIncidenciasByIdUsuario.jspx"/>
+    </definition>
+<definition extends="default" name="incidencias/findIncidenciasByIdUsuarioAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/incidencias/findIncidenciasByIdUsuarioAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="incidencias/findIncidenciasByStatus">
+        <put-attribute name="body" value="/WEB-INF/views/incidencias/findIncidenciasByStatus.jspx"/>
+    </definition>
+</tiles-definitions>

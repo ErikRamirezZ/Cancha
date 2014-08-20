@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_raze_cancha_domain_EstadisticasPartido" modelAttribute="estadisticasPartido" path="/estadisticaspartidoes" render="${empty dependencies}" z="YgyPCn5+U9J1MNlwjsfdyqoXywc=">
+        <field:select field="idPartido" id="c_com_raze_cancha_domain_EstadisticasPartido_idPartido" itemValue="id" items="${partidoes}" path="/partidoes" z="achBtVgeFJWGczdBh1/MKSFeStY="/>
+        <field:input field="marcadorEquipoLocal" id="c_com_raze_cancha_domain_EstadisticasPartido_marcadorEquipoLocal" z="Boj6EiC/nYnRrEqplKQQl3xkv/M="/>
+        <field:input field="marcadorEquipoVisitante" id="c_com_raze_cancha_domain_EstadisticasPartido_marcadorEquipoVisitante" z="nkhkmOuFJU7iH2ze0Oa+K1z/PXs="/>
+        <field:input field="observaciones" id="c_com_raze_cancha_domain_EstadisticasPartido_observaciones" z="70mmeuC0By/yLao6RqTM1r4oh34="/>
+        <field:select field="status" id="c_com_raze_cancha_domain_EstadisticasPartido_status" itemValue="id" items="${statuses}" path="/statuses" z="xdoKimgxBQJ/+QjwkuMYTHy0M4g="/>
+        <field:datetime dateTimePattern="${estadisticasPartido_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_cancha_domain_EstadisticasPartido_fechaCreacion" z="TdxWsd4HF7XuIVZ695PcRHx9Uu8="/>
+        <field:datetime dateTimePattern="${estadisticasPartido_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_cancha_domain_EstadisticasPartido_fechaModificacion" z="m3QxtWY7t3p+Pelm0VcRVcwjfNo="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_raze_cancha_domain_EstadisticasPartido" render="${not empty dependencies}" z="2v1JeZVkB6tcR+mzSOMvSp0OzsA="/>
+</div>

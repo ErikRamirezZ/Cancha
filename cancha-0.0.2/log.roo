@@ -1,0 +1,240 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-06-16 20:00:47
+project --topLevelPackage com.raze.cancha --projectName cancha
+jpa setup --provider HIBERNATE --databaseName cancha --userName root --database MYSQL 
+entity jpa --class ~.domain.Empresa --testAutomatically 
+entity jpa --class ~.domain.Sucursal --testAutomatically 
+entity jpa --class ~.domain.Cancha --testAutomatically 
+entity jpa --class ~.domain.Torneo --testAutomatically 
+entity jpa --class ~.domain.EquipoTorneo --testAutomatically 
+entity jpa --class ~.domain.Equipo --testAutomatically 
+entity jpa --class ~.domain.Partido --testAutomatically 
+entity jpa --class ~.domain.Jugador --testAutomatically 
+entity jpa --class ~.domain.Delegado --testAutomatically 
+entity jpa --class ~.domain.Pago --testAutomatically 
+entity jpa --class ~.domain.EstadisticasPartido --testAutomatically
+entity jpa --class ~.domain.Usuario --testAutomatically
+entity jpa --class ~.domain.Incidencia --testAutomatically
+entity jpa --class ~.domain.Arbitro --testAutomatically
+entity jpa --class ~.domain.Alineacion --testAutomatically
+entity jpa --class ~.reference.Modulo --testAutomatically
+entity jpa --class ~.reference.Status --testAutomatically 
+entity jpa --class ~.reference.Concepto --testAutomatically 
+field string --fieldName nombre --class ~.domain.Empresa
+field string --fieldName nombreComercial
+field string --fieldName domicilio
+field string --fieldName telefono
+field file --fieldName logo --contentType JPG --autoUpload 
+field reference --fieldName status --type ~.reference.Status
+field date --fieldName fechaCreacion --type java.util.Date 
+field date --fieldName fechaModificacion --type java.util.Date 
+field reference --fieldName idEmpresa --type ~.domain.Empresa --class ~.domain.Sucursal
+field string --fieldName nombre
+field string --fieldName domicilio
+field string --fieldName telefono
+field reference --fieldName status --type ~.reference.Status
+field date --fieldName fechaCreacion --type java.util.Date
+field date --fieldName fechaModificacion --type java.util.Date
+field reference --fieldName idSucursal --type ~.domain.Sucursal --class ~.domain.Cancha
+field string --fieldName nombre
+field string --fieldName descripcion
+field reference --fieldName status --type ~.reference.Status
+field date --fieldName fechaCreacion --type java.util.Date
+field date --fieldName fechaModificacion --type java.util.Date
+field reference --fieldName idSucursal --type ~.domain.Sucursal --class ~.domain.Torneo
+field string --fieldName nombre
+field string --fieldName descripcion
+field date --fieldName fechaInicio --type java.util.Date
+field date --fieldName fechaFin --type java.util.Date
+field reference --fieldName status --type ~.reference.Status
+field date --fieldName fechaCreacion --type java.util.Date
+field date --fieldName fechaModificacion --type java.util.Date
+field reference --fieldName idEquipo --type ~.domain.Equipo --class ~.domain.EquipoTorneo
+field reference --fieldName idTorneo --type ~.domain.Torneo
+field reference --fieldName status --type ~.reference.Status
+field reference --fieldName idSucursal --type ~.domain.Sucursal --class ~.domain.Equipo
+field string --fieldName nombre 
+field string --fieldName nombreCorto
+field string --fieldName nombreLargo
+field file --fieldName logo --contentType JPG --autoUpload 
+field reference --fieldName status --type ~.reference.Status
+field date --fieldName fechaCreacion --type java.util.Date
+field date --fieldName fechaModificacion --type java.util.Date
+field reference --fieldName idEquipo --type ~.domain.Equipo --class ~.domain.Jugador
+field string --fieldName nombre
+field string --fieldName apellidoPaterno
+field string --fieldName apellidoMaterno
+field string --fieldName posicion
+field number --fieldName edad --type int 
+field file --fieldName foto --contentType JPG --autoUpload 
+field string --fieldName domicilio
+field string --fieldName telefono
+field string --fieldName correoE
+field reference --fieldName status --type ~.reference.Status
+field date --fieldName fechaCreacion --type java.util.Date
+field date --fieldName fechaModificacion --type java.util.Date
+field reference --fieldName idCancha --type ~.domain.Cancha --class ~.domain.Partido
+field reference --fieldName idArbitro --type ~.domain.Arbitro
+field reference --fieldName idTorneoEquipoLocal --type ~.domain.Torneo
+field reference --fieldName idEquipoLocal --type ~.domain.Equipo
+field reference --fieldName idTorneoEquipoVisitante --type ~.domain.Torneo
+field reference --fieldName idEquipoVisitante --type ~.domain.Equipo
+field date --fieldName fechaJuego --type java.util.Date
+field reference --fieldName status --type ~.reference.Status
+field date --fieldName fechaCreacion --type java.util.Date
+field date --fieldName fechaModificacion --type java.util.Date
+field reference --fieldName idPartido --type ~.domain.Partido --class ~.domain.EstadisticasPartido
+field number --fieldName marcadorEquipoLocal --type int
+field number --fieldName marcadorEquipoVisitante --type int
+field string --fieldName observaciones 
+field reference --fieldName status --type ~.reference.Status
+field date --fieldName fechaCreacion --type java.util.Date
+field date --fieldName fechaModificacion --type java.util.Date
+field reference --fieldName idTorneo --type ~.domain.Torneo --class ~.domain.Pago
+field reference --fieldName idEquipo --type ~.domain.Equipo
+field reference --fieldName idConcepto --type ~.reference.Concepto
+field number --fieldName monto --type double 
+field reference --fieldName status --type ~.reference.Status
+field date --fieldName fechaCreacion --type java.util.Date
+field date --fieldName fechaModificacion --type java.util.Date
+field reference --fieldName idEquipo --type ~.domain.Equipo --class ~.domain.Delegado
+field string --fieldName nombre
+field string --fieldName apellidoPaterno
+field string --fieldName apellidoMaterno
+field string --fieldName domicilio
+field string --fieldName telefono
+field string --fieldName celular
+field string --fieldName correoE
+field reference --fieldName status --type ~.reference.Status
+field date --fieldName fechaCreacion --type java.util.Date
+field date --fieldName fechaModificacion --type java.util.Date
+field reference --fieldName idEmpresa --type ~.domain.Empresa --class ~.domain.Usuario
+field string --fieldName usuario 
+field string --fieldName contrasena 
+field number --fieldName intentos --type int 
+field date --fieldName ultimaFechaAcceso --type java.util.Date
+field reference --fieldName status --type ~.reference.Status
+field date --fieldName fechaCreacion --type java.util.Date
+field date --fieldName fechaModificacion --type java.util.Date
+field reference --fieldName idSucursal --type ~.domain.Sucursal --class ~.domain.Incidencia
+field reference --fieldName idUsuario --type ~.domain.Usuario
+field string --fieldName observaciones
+field reference --fieldName status --type ~.reference.Status
+field date --fieldName fechaCreacion --type java.util.Date
+field date --fieldName fechaModificacion --type java.util.Date
+field string --fieldName nombre --class ~.domain.Arbitro
+field string --fieldName apellidoPaterno
+field string --fieldName apellidoMaterno
+field number --fieldName edad --type int 
+field string --fieldName domicilio
+field string --fieldName telefono
+field string --fieldName celular
+field string --fieldName correoE
+field reference --fieldName status --type ~.reference.Status
+field date --fieldName fechaCreacion --type java.util.Date
+field date --fieldName fechaModificacion --type java.util.Date
+field reference --fieldName idPartido --type ~.domain.Partido --class ~.domain.Alineacion
+field reference --fieldName idJugador --type ~.domain.Jugador
+field reference --fieldName idModulo --type ~.reference.Modulo --class ~.reference.Status
+field string --fieldName nombre
+field string --fieldName descripcion 
+field date --fieldName fechaCreacion --type java.util.Date
+field date --fieldName fechaModificacion --type java.util.Date
+field string --fieldName nombre --class ~.reference.Modulo
+field string --fieldName descripcion
+field date --fieldName fechaCreacion --type java.util.Date
+field date --fieldName fechaModificacion --type java.util.Date
+field string --fieldName nombre --class ~.reference.concepto
+field string --fieldName descripcion
+field reference --fieldName status --type ~.reference.Status
+field date --fieldName fechaCreacion --type java.util.Date
+field date --fieldName fechaModificacion --type java.util.Date
+finder add --class ~.domain.Empresa --finderName findEmpresasByStatus
+finder add --class ~.domain.Empresa --finderName findEmpresasByIdEmpresaAndStatus
+finder add --class ~.domain.Empresa --finderName findEmpresasByNombreLikeOrNombreComercialLikeAndStatus
+finder add --class ~.domain.Empresa --finderName findEmpresasByNombreLikeAndNombreComercialLikeAndStatus
+finder add --class ~.domain.Sucursal --finderName findSucursalsByStatus
+finder add --class ~.domain.Sucursal --finderName findSucursalsByIdEmpresaAndStatus
+finder add --class ~.domain.Cancha --finderName findCanchasByStatus
+finder add --class ~.domain.Cancha --finderName findCanchasByIdSucursalAndStatus
+finder add --class ~.domain.Torneo --finderName findTorneosByStatus
+finder add --class ~.domain.Torneo --finderName findTorneosByIdSucursalAndStatus
+finder add --class ~.domain.Equipo --finderName findEquipoesByStatus
+finder add --class ~.domain.Equipo --finderName findEquipoesByIdSucursalAndStatus
+finder add --class ~.domain.Equipo --finderName findEquipoesByNombreLikeAndStatus
+finder add --class ~.domain.EquipoTorneo --finderName findEquipoTorneosByIdEquipo
+finder add --class ~.domain.EquipoTorneo --finderName findEquipoTorneosByIdEquipoAndStatus
+finder add --class ~.domain.EquipoTorneo --finderName findEquipoTorneosByIdTorneo
+finder add --class ~.domain.EquipoTorneo --finderName findEquipoTorneosByIdTorneoAndStatus
+finder add --class ~.domain.EquipoTorneo --finderName findEquipoTorneosByStatus
+finder add --class ~.domain.Partido --finderName findPartidoesByStatus
+finder add --class ~.domain.Partido --finderName findPartidoesByIdCancha
+finder add --class ~.domain.Partido --finderName findPartidoesByIdCanchaAndStatus
+finder add --class ~.domain.Partido --finderName findPartidoesByIdArbitro
+finder add --class ~.domain.Partido --finderName findPartidoesByIdTorneoEquipoLocal
+finder add --class ~.domain.Partido --finderName findPartidoesByIdTorneoEquipoLocalAndStatus
+finder add --class ~.domain.Partido --finderName findPartidoesByIdTorneoEquipoVisitante
+finder add --class ~.domain.Partido --finderName findPartidoesByIdTorneoEquipoVisitanteAndStatus
+finder add --class ~.domain.Partido --finderName findPartidoesByIdTorneoEquipoLocalAndIdTorneoEquipoVisitante
+finder add --class ~.domain.Partido --finderName findPartidoesByIdTorneoEquipoLocalAndIdTorneoEquipoVisitanteAndStatus
+finder add --class ~.domain.Partido --finderName findPartidoesByIdTorneoEquipoVisitanteAndIdEquipoLocal
+finder add --class ~.domain.Partido --finderName findPartidoesByIdTorneoEquipoVisitanteAndIdEquipoLocalAndStatus
+finder add --class ~.domain.Partido --finderName findPartidoesByIdTorneoEquipoVisitanteAndIdEquipoVisitante
+finder add --class ~.domain.Partido --finderName findPartidoesByIdTorneoEquipoVisitanteAndIdEquipoVisitanteAndStatus
+finder add --class ~.domain.Partido --finderName findPartidoesByFechaJuegoBetween
+finder add --class ~.domain.Partido --finderName findPartidoesByFechaJuegoBetweenAndStatus
+finder add --class ~.domain.Partido --finderName findPartidoesByFechaJuegoEquals
+finder add --class ~.domain.Partido --finderName findPartidoesByFechaJuegoBetweenAndStatus
+finder add --class ~.domain.EstadisticasPartido --finderName findEstadisticasPartidoesByStatus
+finder add --class ~.domain.EstadisticasPartido --finderName findEstadisticasPartidoesByIdPartido
+finder add --class ~.domain.EstadisticasPartido --finderName findEstadisticasPartidoesByIdPartidoAndStatus
+finder add --class ~.domain.Alineacion --finderName findAlineacionsByIdPartido
+finder add --class ~.domain.Arbitro --finderName findArbitroesByStatus
+finder add --class ~.domain.Arbitro --finderName findArbitroesByCorreoEEqualsAndStatus
+finder add --class ~.domain.Arbitro --finderName findArbitroesByCorreoEEquals
+finder add --class ~.domain.Arbitro --finderName findArbitroesByCorreoELike
+finder add --class ~.domain.Arbitro --finderName findArbitroesByCorreoELikeAndStatus
+finder add --class ~.domain.Arbitro --finderName findArbitroesByNombreLike
+finder add --class ~.domain.Arbitro --finderName findArbitroesByNombreLikeAndStatus
+finder add --class ~.domain.Arbitro --finderName findArbitroesByNombreLikeAndApellidoPaternoLike
+finder add --class ~.domain.Arbitro --finderName findArbitroesByNombreLikeAndApellidoPaternoLikeAndStatus
+finder add --class ~.domain.Jugador --finderName findJugadorsByStatus
+finder add --class ~.domain.Jugador --finderName findJugadorsByCorreoELike
+finder add --class ~.domain.Jugador --finderName findJugadorsByCorreoELikeAndStatus
+finder add --class ~.domain.Jugador --finderName findJugadorsByIdEquipo
+finder add --class ~.domain.Jugador --finderName findJugadorsByIdEquipoAndStatus
+finder add --class ~.domain.Jugador --finderName findJugadorsByNombreLikeAndApellidoPaternoLike
+finder add --class ~.domain.Jugador --finderName findJugadorsByNombreLikeAndApellidoPaternoLikeAndStatus
+finder add --class ~.domain.Delegado --finderName findDelegadoesByStatus
+finder add --class ~.domain.Delegado --finderName findDelegadoesByCorreoELike
+finder add --class ~.domain.Delegado --finderName findDelegadoesByCorreoELikeAndStatus
+finder add --class ~.domain.Delegado --finderName findDelegadoesByIdEquipo
+finder add --class ~.domain.Delegado --finderName findDelegadoesByIdEquipoAndStatus
+finder add --class ~.domain.Delegado --finderName findDelegadoesByNombreLikeAndApellidoPaternoLike
+finder add --class ~.domain.Delegado --finderName findDelegadoesByNombreLikeAndApellidoPaternoLikeAndStatus
+finder add --class ~.domain.Incidencia --finderName findIncidenciasByStatus
+finder add --class ~.domain.Incidencia --finderName findIncidenciasByFechaCreacionBetween
+finder add --class ~.domain.Incidencia --finderName findIncidenciasByFechaCreacionBetweenAndStatus
+finder add --class ~.domain.Incidencia --finderName findIncidenciasByFechaCreacionEquals
+finder add --class ~.domain.Incidencia --finderName findIncidenciasByFechaCreacionEqualsAndStatus
+finder add --class ~.domain.Incidencia --finderName findIncidenciasByIdSucursal
+finder add --class ~.domain.Incidencia --finderName findIncidenciasByIdSucursalAndStatus
+finder add --class ~.domain.Incidencia --finderName findIncidenciasByIdUsuario
+finder add --class ~.domain.Incidencia --finderName findIncidenciasByIdUsuarioAndStatus
+finder add --class ~.reference.Modulo --finderName findModuloesByNombreNotEquals
+finder add --class ~.reference.Concepto --finderName findConceptoesByNombreLike
+finder add --class ~.reference.Concepto --finderName findConceptoesByNombreLikeAndStatus
+finder add --class ~.reference.Concepto --finderName findConceptoesByStatus
+finder add --class ~.reference.Status --finderName findStatusesByIdModulo
+json all
+web mvc json setup
+web mvc json all --package ~.controller
+web mvc setup
+web mvc all --package ~.controller
+web mvc finder all
+web mvc install language --code es
+web mvc view --path / --viewName menuPrincipal --title Menu_Principal
+security setup
+logging setup --level INFO --package PROJECT 
+// script --file v2.roo
+exit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-06-16 20:02:31

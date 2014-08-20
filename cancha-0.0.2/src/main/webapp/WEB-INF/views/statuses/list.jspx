@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_cancha_reference_Status" items="${statuses}" z="W9xgElFiOIk25UICnjKsd7VqT0g=">
+        <table:table data="${statuses}" id="l_com_raze_cancha_reference_Status" path="/statuses" z="i09gew1Dgoc6TOmylmradLYdGS0=">
+            <table:column id="c_com_raze_cancha_reference_Status_idModulo" property="idModulo" z="ww+EcbbSFS1VNggmH5A04BpTdqg="/>
+            <table:column id="c_com_raze_cancha_reference_Status_nombre" property="nombre" z="u2eNzPV/ePWrfk6aepRaX8WmE1M="/>
+            <table:column id="c_com_raze_cancha_reference_Status_descripcion" property="descripcion" z="TPIdfu0ooXrUogLYTkMpcwuyMig="/>
+            <table:column date="true" dateTimePattern="${status_fechacreacion_date_format}" id="c_com_raze_cancha_reference_Status_fechaCreacion" property="fechaCreacion" z="/lP0NeF8AMxY6Pk8TODj0fyWCNI="/>
+            <table:column date="true" dateTimePattern="${status_fechamodificacion_date_format}" id="c_com_raze_cancha_reference_Status_fechaModificacion" property="fechaModificacion" z="4tdetsr8Wdl6LLYDxzBeLxN4484="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_cancha_domain_Partido" modelAttribute="partido" path="/partidoes" versionField="Version" z="mvAXiFJkbVsTFol7lwb//6YYIgc=">
+        <field:select field="idCancha" id="c_com_raze_cancha_domain_Partido_idCancha" itemValue="id" items="${canchas}" path="/canchas" z="w7AExZn6jW9+BIw5G+157pdlZ0E="/>
+        <field:select field="idArbitro" id="c_com_raze_cancha_domain_Partido_idArbitro" itemValue="id" items="${arbitroes}" path="/arbitroes" z="hm+u6/5Jfybxb/pPVehYoGBL1G0="/>
+        <field:select field="idTorneoEquipoLocal" id="c_com_raze_cancha_domain_Partido_idTorneoEquipoLocal" itemValue="id" items="${torneos}" path="/torneos" z="HITI6jyi68yd7An7/WkzdrD74R8="/>
+        <field:select field="idEquipoLocal" id="c_com_raze_cancha_domain_Partido_idEquipoLocal" itemValue="id" items="${equipoes}" path="/equipoes" z="TA1vgi1QKjYJ5oCZ/vj3OliVsMQ="/>
+        <field:select field="idTorneoEquipoVisitante" id="c_com_raze_cancha_domain_Partido_idTorneoEquipoVisitante" itemValue="id" items="${torneos}" path="/torneos" z="eHTJwthf44XixDUIYeYRDviMrx4="/>
+        <field:select field="idEquipoVisitante" id="c_com_raze_cancha_domain_Partido_idEquipoVisitante" itemValue="id" items="${equipoes}" path="/equipoes" z="v94HZ2SUi4KYLkcT4bayk7tBZfY="/>
+        <field:datetime dateTimePattern="${partido_fechajuego_date_format}" field="fechaJuego" id="c_com_raze_cancha_domain_Partido_fechaJuego" z="6pVML77s0MKEvFIyzEMUkKOu8pI="/>
+        <field:select field="status" id="c_com_raze_cancha_domain_Partido_status" itemValue="id" items="${statuses}" path="/statuses" z="twOIyok3ARnb2nnJICe/l1kH+c4="/>
+        <field:datetime dateTimePattern="${partido_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_cancha_domain_Partido_fechaCreacion" z="BEzZy3O+3xPJvZh/RJxft2I6ZWY="/>
+        <field:datetime dateTimePattern="${partido_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_cancha_domain_Partido_fechaModificacion" z="iCb38zGi8R5tBoNxqAXA7+ZYRC4="/>
+    </form:update>
+</div>

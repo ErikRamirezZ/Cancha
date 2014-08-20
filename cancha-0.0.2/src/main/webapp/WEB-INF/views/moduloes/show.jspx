@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_reference_Modulo" object="${modulo}" path="/moduloes" z="lh6h8t6ffOI2YU474swZFaFMPMY=">
+        <field:display field="nombre" id="s_com_raze_cancha_reference_Modulo_nombre" object="${modulo}" z="RIh29NpbPvzQBvMKk6/oCbAO2wY="/>
+        <field:display field="descripcion" id="s_com_raze_cancha_reference_Modulo_descripcion" object="${modulo}" z="VDTw/bmyCrxCULte31LI38YFlcU="/>
+        <field:display date="true" dateTimePattern="${modulo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_cancha_reference_Modulo_fechaCreacion" object="${modulo}" z="TE7EIqgk4qhz8TqWLhvBvAIj/t0="/>
+        <field:display date="true" dateTimePattern="${modulo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_cancha_reference_Modulo_fechaModificacion" object="${modulo}" z="UFkHJXg4qeuJ2V5FMnuivobvPPE="/>
+    </page:show>
+</div>

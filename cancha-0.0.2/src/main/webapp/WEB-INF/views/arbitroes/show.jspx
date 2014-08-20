@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_domain_Arbitro" object="${arbitro}" path="/arbitroes" z="fJ23+jvVzRkYZT3ajWp7p60c4PQ=">
+        <field:display field="nombre" id="s_com_raze_cancha_domain_Arbitro_nombre" object="${arbitro}" z="cUFTxhs/iXj9LoaJk2vYHeomE2k="/>
+        <field:display field="apellidoPaterno" id="s_com_raze_cancha_domain_Arbitro_apellidoPaterno" object="${arbitro}" z="1b8G5oD5GKUdo73rGlJIfH7o/To="/>
+        <field:display field="apellidoMaterno" id="s_com_raze_cancha_domain_Arbitro_apellidoMaterno" object="${arbitro}" z="+SKcEt43SBKeX0DRe+UJ31WTZG0="/>
+        <field:display field="edad" id="s_com_raze_cancha_domain_Arbitro_edad" object="${arbitro}" z="CqIcK7+PdnuzNGWkkH0IqQYdLkE="/>
+        <field:display field="domicilio" id="s_com_raze_cancha_domain_Arbitro_domicilio" object="${arbitro}" z="WkgL20WITZapCgq0yabKlUseS2M="/>
+        <field:display field="telefono" id="s_com_raze_cancha_domain_Arbitro_telefono" object="${arbitro}" z="GKe1xhUqhIUMetlmHuWWfOp+wAU="/>
+        <field:display field="celular" id="s_com_raze_cancha_domain_Arbitro_celular" object="${arbitro}" z="cZoKP2fr92X63DpzZ12Ig3KuKSY="/>
+        <field:display field="correoE" id="s_com_raze_cancha_domain_Arbitro_correoE" object="${arbitro}" z="axz899M9gi2hHvOiSzOKySoLqDg="/>
+        <field:display field="status" id="s_com_raze_cancha_domain_Arbitro_status" object="${arbitro}" z="5Wcj3uiEd7B5Hfq0m/qtiJAlWC0="/>
+        <field:display date="true" dateTimePattern="${arbitro_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_cancha_domain_Arbitro_fechaCreacion" object="${arbitro}" z="+ihzHnlHlWC3F396c089otzPa/g="/>
+        <field:display date="true" dateTimePattern="${arbitro_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_cancha_domain_Arbitro_fechaModificacion" object="${arbitro}" z="+q6mQLRI5T8dk5JuSNuTB/gVFBg="/>
+    </page:show>
+</div>

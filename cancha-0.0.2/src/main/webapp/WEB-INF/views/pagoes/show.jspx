@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_domain_Pago" object="${pago}" path="/pagoes" z="gNciH0WCCg3ZSHaRkFtIa8WsUmE=">
+        <field:display field="idTorneo" id="s_com_raze_cancha_domain_Pago_idTorneo" object="${pago}" z="GFQttC1rIESuQwmlK6/umDX7t7Y="/>
+        <field:display field="idEquipo" id="s_com_raze_cancha_domain_Pago_idEquipo" object="${pago}" z="tRO152/zBZPYl+btMJkhuuqdScM="/>
+        <field:display field="idConcepto" id="s_com_raze_cancha_domain_Pago_idConcepto" object="${pago}" z="5istkhQnZzs0i7+vSbX1tPYdtIA="/>
+        <field:display field="monto" id="s_com_raze_cancha_domain_Pago_monto" object="${pago}" z="0mRMDqvQa5TQ4HBWPxPDtXp1yRs="/>
+        <field:display field="status" id="s_com_raze_cancha_domain_Pago_status" object="${pago}" z="GhydkZXgR+uZ47mQGXFuCewVuUg="/>
+        <field:display date="true" dateTimePattern="${pago_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_cancha_domain_Pago_fechaCreacion" object="${pago}" z="69+Te3C/B6NDrXJb6Sd4J5rJdps="/>
+        <field:display date="true" dateTimePattern="${pago_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_cancha_domain_Pago_fechaModificacion" object="${pago}" z="+F4v5XmLgB44l0F+Fq+0gZNt/t0="/>
+    </page:show>
+</div>

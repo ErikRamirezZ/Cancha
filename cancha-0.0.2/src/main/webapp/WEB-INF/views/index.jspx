@@ -1,0 +1,74 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:spring="http://www.springframework.org/tags" 
+	xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" 
+	xmlns:jsp="http://java.sun.com/JSP/Page" 
+	xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+  <jsp:directive.page contentType="text/html;charset=UTF-8" />
+  <jsp:output omit-xml-declaration="yes" />
+  <spring:message var="app_name" code="application_name" htmlEscape="false" />
+  <spring:message var="title" code="welcome_titlepane" arguments="${app_name}" htmlEscape="false" />
+  <util:panel id="title" title="${title}">
+    <h3>
+      <spring:message code="welcome_h3" arguments="${app_name}" />
+    </h3>
+    <p>
+      <spring:message code="welcome_text" />
+    </p>
+    <spring:url var="icono_configuracion" value="/resources/images/icono_configuracion.png" />
+    <spring:url var="indexConfiguracion" value="/indexConfiguracion" />
+    
+    <div class="btnMenuPrincipal">
+      <a href="${indexConfiguracion}" name="prueba" title="Prueba">
+        <img src="${icono_configuracion}"  height="80px" width="80px"/>
+      </a>
+    </div>
+    <div class="btnMenuPrincipal">
+      Partido
+    </div>
+    <div class="btnMenuPrincipal">
+      Estadisticas
+    </div>
+    
+  </util:panel>
+  
+  <spring:url var="findSucursals_byIdEmpresaAndStatus" value="/sucursals?find=ByIdEmpresaAndStatus" />
+	<c:if test="${prueba eq null}">
+    <div id="dialogSelectSucursal">
+    	<div id="dialogContent">
+    		<field:select disableFormBinding="true" field="status" 
+    			id="f_com_raze_cancha_domain_Sucursal" itemValue="id" items="${sucursals}" 
+    			path="/sucursals" required="true"/>
+    	</div>
+    </div>
+    <script type="text/javascript">
+    	Spring.addDecoration(new Spring.ElementDecoration({elementId:'dialogSelectSucursal', widgetType:'dijit.Dialog', widgetAttrs:{title:'Pruebas'}}));</script>
+    <script type="text/javascript">
+    	function showForm(){
+    		dijit.byId("dialogSelectSucursal").show();
+    	}
+    	
+    	function testAjax(){
+       	var xhrArgs = {
+     		    url: "${findSucursals_byIdEmpresaAndStatus}",
+     		 		content: {idEmpresa:1,status:1},
+     		    handleAs: "json",
+     		    load: function(sucursales){
+     		    	dijit.byId("dialogContent").innerHTML += "Prueba de pintura de texto";
+							//array.forEach(sucursales, function(item, i){
+     		    		//dijit.byId("dialogContent").innerHTML = i++ + item.id + item.nombre;
+     		    		//dijit.byId("f_com_raze_cancha_domain_Sucursal").addOption({ label: item.id , value: item.nombre });
+     		    	//});
+     		    },
+     		    error: function(error){
+     		    	dijit.byId("dialogSelectSucursal").innerHTML = "An unexpected error occurred: " + error;
+     		    }
+   		  }
+       	dojo.xhrPost(xhrArgs);    		
+    	}
+    	
+    	dojo.addOnLoad(showForm);
+    	dojo.ready(testAjax);    	
+   	</script>
+  </c:if>
+  
+</div>

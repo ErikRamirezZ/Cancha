@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_raze_cancha_reference_Concepto" modelAttribute="concepto" path="/conceptoes" render="${empty dependencies}" z="Ils3xIdrE5k2cv0nPUCYg98+tCk=">
+        <field:input field="nombre" id="c_com_raze_cancha_reference_Concepto_nombre" z="pWMqykQC1ca5V/x0qbmRO3HpQ0g="/>
+        <field:input field="descripcion" id="c_com_raze_cancha_reference_Concepto_descripcion" z="Tx8KVjsUbAackHMi9uUX27QVCXM="/>
+        <field:select field="status" id="c_com_raze_cancha_reference_Concepto_status" itemValue="id" items="${statuses}" path="/statuses" z="Wvpjf4wTsRWRjDljN4eT6+1AQqc="/>
+        <field:datetime dateTimePattern="${concepto_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_cancha_reference_Concepto_fechaCreacion" z="7R5bMblE/HrJEna7OTl+x0dAt0o="/>
+        <field:datetime dateTimePattern="${concepto_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_cancha_reference_Concepto_fechaModificacion" z="6Z7AlbRWwBgfarLqrm/XJG6G1rY="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_raze_cancha_reference_Concepto" render="${not empty dependencies}" z="cZT4nrgrD/YegzFHHNQMkVtDmAg="/>
+</div>

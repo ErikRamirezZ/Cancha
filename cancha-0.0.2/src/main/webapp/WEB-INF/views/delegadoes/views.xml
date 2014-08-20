@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="delegadoes/list">
+        <put-attribute name="body" value="/WEB-INF/views/delegadoes/list.jspx"/>
+    </definition>
+<definition extends="default" name="delegadoes/show">
+        <put-attribute name="body" value="/WEB-INF/views/delegadoes/show.jspx"/>
+    </definition>
+<definition extends="default" name="delegadoes/create">
+        <put-attribute name="body" value="/WEB-INF/views/delegadoes/create.jspx"/>
+    </definition>
+<definition extends="default" name="delegadoes/update">
+        <put-attribute name="body" value="/WEB-INF/views/delegadoes/update.jspx"/>
+    </definition>
+<definition extends="default" name="delegadoes/findDelegadoesByCorreoELike">
+        <put-attribute name="body" value="/WEB-INF/views/delegadoes/findDelegadoesByCorreoELike.jspx"/>
+    </definition>
+<definition extends="default" name="delegadoes/findDelegadoesByCorreoELikeAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/delegadoes/findDelegadoesByCorreoELikeAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="delegadoes/findDelegadoesByIdEquipo">
+        <put-attribute name="body" value="/WEB-INF/views/delegadoes/findDelegadoesByIdEquipo.jspx"/>
+    </definition>
+<definition extends="default" name="delegadoes/findDelegadoesByIdEquipoAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/delegadoes/findDelegadoesByIdEquipoAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="delegadoes/findDelegadoesByNombreLikeAndApellidoPaternoLike">
+        <put-attribute name="body" value="/WEB-INF/views/delegadoes/findDelegadoesByNombreLikeAndApellidoPaternoLike.jspx"/>
+    </definition>
+<definition extends="default" name="delegadoes/findDelegadoesByNombreLikeAndApellidoPaternoLikeAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/delegadoes/findDelegadoesByNombreLikeAndApellidoPaternoLikeAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="delegadoes/findDelegadoesByStatus">
+        <put-attribute name="body" value="/WEB-INF/views/delegadoes/findDelegadoesByStatus.jspx"/>
+    </definition>
+</tiles-definitions>

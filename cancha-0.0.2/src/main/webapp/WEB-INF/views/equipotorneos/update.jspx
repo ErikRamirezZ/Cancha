@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_cancha_domain_EquipoTorneo" modelAttribute="equipoTorneo" path="/equipotorneos" versionField="Version" z="eBGa7YNzaQznTlTRCN9Otj7QTzI=">
+        <field:select field="idEquipo" id="c_com_raze_cancha_domain_EquipoTorneo_idEquipo" itemValue="id" items="${equipoes}" path="/equipoes" z="9PhOIemJAsMqlOmcVUMIKh/6TnQ="/>
+        <field:select field="idTorneo" id="c_com_raze_cancha_domain_EquipoTorneo_idTorneo" itemValue="id" items="${torneos}" path="/torneos" z="+XcOwl4fgIXKSezp0XAYTOjycJM="/>
+        <field:select field="status" id="c_com_raze_cancha_domain_EquipoTorneo_status" itemValue="id" items="${statuses}" path="/statuses" z="SuLqwzHiCDPreLHkqCeCiysITiQ="/>
+    </form:update>
+</div>

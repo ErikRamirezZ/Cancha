@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_cancha_domain_Sucursal" items="${sucursals}" z="cAmrat68KQvde9Xw5pjtWlhb+jY=">
+        <table:table data="${sucursals}" id="l_com_raze_cancha_domain_Sucursal" path="/sucursals" z="pkrCAyKMfGCGkEDTe2enhpXX3lo=">
+            <table:column id="c_com_raze_cancha_domain_Sucursal_idEmpresa" property="idEmpresa" z="TEAFR65xGA2bja5Igg5lj/q2N3w="/>
+            <table:column id="c_com_raze_cancha_domain_Sucursal_nombre" property="nombre" z="APvZtBHA8mVWXUPXil3RzbK1ZQs="/>
+            <table:column id="c_com_raze_cancha_domain_Sucursal_domicilio" property="domicilio" z="FhiIIWpiIfFnamBDrhZm8evObrQ="/>
+            <table:column id="c_com_raze_cancha_domain_Sucursal_telefono" property="telefono" z="4pYRGlFQADw1CgHE+t/UHI7eLpo="/>
+            <table:column id="c_com_raze_cancha_domain_Sucursal_status" property="status" z="yxdCzs0on+/ZOsutsbrhX2MQZ4Q="/>
+            <table:column date="true" dateTimePattern="${sucursal_fechacreacion_date_format}" id="c_com_raze_cancha_domain_Sucursal_fechaCreacion" property="fechaCreacion" z="61lEcl0Cm2nU783rhhzmIJXClCc="/>
+        </table:table>
+    </page:list>
+</div>

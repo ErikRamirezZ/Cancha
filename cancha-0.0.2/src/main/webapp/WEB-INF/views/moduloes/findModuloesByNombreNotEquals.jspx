@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByNombreNotEquals" id="ff_com_raze_cancha_reference_Modulo" path="/moduloes" z="xifrXHP06K5o6YJynllf28fi4sQ=">
+        <field:input disableFormBinding="true" field="nombre" id="f_com_raze_cancha_reference_Modulo_nombre" required="true" z="rtFP802q4bHcRo0q0+qsLPi/yHs="/>
+    </form:find>
+</div>

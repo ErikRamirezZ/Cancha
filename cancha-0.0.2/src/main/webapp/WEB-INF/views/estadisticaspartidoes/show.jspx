@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_domain_EstadisticasPartido" object="${estadisticaspartido}" path="/estadisticaspartidoes" z="HWAxbROT6uzOwzg8FFl9KHYHl6U=">
+        <field:display field="idPartido" id="s_com_raze_cancha_domain_EstadisticasPartido_idPartido" object="${estadisticaspartido}" z="efOGm3PjL60K214LQEo/pRMDfLI="/>
+        <field:display field="marcadorEquipoLocal" id="s_com_raze_cancha_domain_EstadisticasPartido_marcadorEquipoLocal" object="${estadisticaspartido}" z="2tY40FFekslfsU/6lU3vG+NNwJg="/>
+        <field:display field="marcadorEquipoVisitante" id="s_com_raze_cancha_domain_EstadisticasPartido_marcadorEquipoVisitante" object="${estadisticaspartido}" z="BrwgQ4qryc4y0ZXGc8i3gRTL4pM="/>
+        <field:display field="observaciones" id="s_com_raze_cancha_domain_EstadisticasPartido_observaciones" object="${estadisticaspartido}" z="CdhfSNCyda2jwthfq6qPgBW9MKQ="/>
+        <field:display field="status" id="s_com_raze_cancha_domain_EstadisticasPartido_status" object="${estadisticaspartido}" z="dtE1FE/R98oUZtlhAX2m89f6oxQ="/>
+        <field:display date="true" dateTimePattern="${estadisticasPartido_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_cancha_domain_EstadisticasPartido_fechaCreacion" object="${estadisticaspartido}" z="hcWpp7VS/vfxGQ9uLDTsCep8hUY="/>
+        <field:display date="true" dateTimePattern="${estadisticasPartido_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_cancha_domain_EstadisticasPartido_fechaModificacion" object="${estadisticaspartido}" z="aXe07XIXvdgVI6aikzo1n4AquSc="/>
+    </page:show>
+</div>

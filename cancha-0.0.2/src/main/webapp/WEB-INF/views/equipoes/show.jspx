@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_domain_Equipo" object="${equipo}" path="/equipoes" z="XvooAUKTbzNv2qC8KVzoBOplPCY=">
+        <field:display field="idSucursal" id="s_com_raze_cancha_domain_Equipo_idSucursal" object="${equipo}" z="se4SxX+ccbHAbj0zpwwJoo5KCWI="/>
+        <field:display field="nombre" id="s_com_raze_cancha_domain_Equipo_nombre" object="${equipo}" z="JZP6kOK7npI3IXGJRUMLMhGE+xc="/>
+        <field:display field="nombreCorto" id="s_com_raze_cancha_domain_Equipo_nombreCorto" object="${equipo}" z="UPwzrkUQ6O9cvKhgAHMqYZ9FNs0="/>
+        <field:display field="nombreLargo" id="s_com_raze_cancha_domain_Equipo_nombreLargo" object="${equipo}" z="OCXs3BoDfUEtzl557F4E/E7AoRI="/>
+        <field:display field="logo" id="s_com_raze_cancha_domain_Equipo_logo" object="${equipo}" z="3PMdzo1McnzKBQdvOyzPdetGOdI="/>
+        <field:display field="status" id="s_com_raze_cancha_domain_Equipo_status" object="${equipo}" z="FeugXFqZzdgmFEGdElsrlHib3Rw="/>
+        <field:display date="true" dateTimePattern="${equipo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_cancha_domain_Equipo_fechaCreacion" object="${equipo}" z="g47lE+lymEdwkTp2zJZZ8QO39gY="/>
+        <field:display date="true" dateTimePattern="${equipo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_cancha_domain_Equipo_fechaModificacion" object="${equipo}" z="FBJRXZAm7t9zz6+yN35UfjFEBbo="/>
+    </page:show>
+</div>

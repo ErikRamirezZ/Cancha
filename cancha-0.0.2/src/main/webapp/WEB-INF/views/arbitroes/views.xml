@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="arbitroes/list">
+        <put-attribute name="body" value="/WEB-INF/views/arbitroes/list.jspx"/>
+    </definition>
+<definition extends="default" name="arbitroes/show">
+        <put-attribute name="body" value="/WEB-INF/views/arbitroes/show.jspx"/>
+    </definition>
+<definition extends="default" name="arbitroes/create">
+        <put-attribute name="body" value="/WEB-INF/views/arbitroes/create.jspx"/>
+    </definition>
+<definition extends="default" name="arbitroes/update">
+        <put-attribute name="body" value="/WEB-INF/views/arbitroes/update.jspx"/>
+    </definition>
+<definition extends="default" name="arbitroes/findArbitroesByCorreoEEquals">
+        <put-attribute name="body" value="/WEB-INF/views/arbitroes/findArbitroesByCorreoEEquals.jspx"/>
+    </definition>
+<definition extends="default" name="arbitroes/findArbitroesByCorreoEEqualsAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/arbitroes/findArbitroesByCorreoEEqualsAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="arbitroes/findArbitroesByCorreoELike">
+        <put-attribute name="body" value="/WEB-INF/views/arbitroes/findArbitroesByCorreoELike.jspx"/>
+    </definition>
+<definition extends="default" name="arbitroes/findArbitroesByCorreoELikeAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/arbitroes/findArbitroesByCorreoELikeAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="arbitroes/findArbitroesByNombreLike">
+        <put-attribute name="body" value="/WEB-INF/views/arbitroes/findArbitroesByNombreLike.jspx"/>
+    </definition>
+<definition extends="default" name="arbitroes/findArbitroesByNombreLikeAndApellidoPaternoLike">
+        <put-attribute name="body" value="/WEB-INF/views/arbitroes/findArbitroesByNombreLikeAndApellidoPaternoLike.jspx"/>
+    </definition>
+<definition extends="default" name="arbitroes/findArbitroesByNombreLikeAndApellidoPaternoLikeAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/arbitroes/findArbitroesByNombreLikeAndApellidoPaternoLikeAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="arbitroes/findArbitroesByNombreLikeAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/arbitroes/findArbitroesByNombreLikeAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="arbitroes/findArbitroesByStatus">
+        <put-attribute name="body" value="/WEB-INF/views/arbitroes/findArbitroesByStatus.jspx"/>
+    </definition>
+</tiles-definitions>

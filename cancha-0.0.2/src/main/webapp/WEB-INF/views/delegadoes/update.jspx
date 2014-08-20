@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_cancha_domain_Delegado" modelAttribute="delegado" path="/delegadoes" versionField="Version" z="MCtQBjZQOEaDdkeyTAvaatDzh4w=">
+        <field:select field="idEquipo" id="c_com_raze_cancha_domain_Delegado_idEquipo" itemValue="id" items="${equipoes}" path="/equipoes" z="sNXUFtKrAWhO2WAQ1OuHauHNbSw="/>
+        <field:input field="nombre" id="c_com_raze_cancha_domain_Delegado_nombre" z="O287v+R35o0vgfxmtVpev3Ndduw="/>
+        <field:input field="apellidoPaterno" id="c_com_raze_cancha_domain_Delegado_apellidoPaterno" z="49ukzZTAYD2l0nRq5aP5kGsiZeo="/>
+        <field:input field="apellidoMaterno" id="c_com_raze_cancha_domain_Delegado_apellidoMaterno" z="xux2mKc9ovSvwlQktpescH7bSCs="/>
+        <field:input field="domicilio" id="c_com_raze_cancha_domain_Delegado_domicilio" z="IFeH1Q/Vho75OjE0QXGwzIBRce8="/>
+        <field:input field="telefono" id="c_com_raze_cancha_domain_Delegado_telefono" z="T9i3ih2piEnPTFtG0QzKU7UVaaA="/>
+        <field:input field="celular" id="c_com_raze_cancha_domain_Delegado_celular" z="DkVBLIlux+BzxEimQMJMPgO2KiA="/>
+        <field:input field="correoE" id="c_com_raze_cancha_domain_Delegado_correoE" z="pbnDmtE9aYNlq2QeuEd/skhRkuQ="/>
+        <field:select field="status" id="c_com_raze_cancha_domain_Delegado_status" itemValue="id" items="${statuses}" path="/statuses" z="6ZejtLUzzBMak/48Sv4bjSaWgF4="/>
+        <field:datetime dateTimePattern="${delegado_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_cancha_domain_Delegado_fechaCreacion" z="hPF8YdSPxhlgeRLk4aW5F4AHMCs="/>
+        <field:datetime dateTimePattern="${delegado_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_cancha_domain_Delegado_fechaModificacion" z="C3lkVwiRMkyprnH2PwjWuz/KvP0="/>
+    </form:update>
+</div>

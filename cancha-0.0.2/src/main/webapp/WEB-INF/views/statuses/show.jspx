@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_reference_Status" object="${status}" path="/statuses" z="A1bkfXhbJA33oeDGF6izQAdnGX0=">
+        <field:display field="idModulo" id="s_com_raze_cancha_reference_Status_idModulo" object="${status}" z="ticzehEq/qJtaCKWyTGaHYHMCEI="/>
+        <field:display field="nombre" id="s_com_raze_cancha_reference_Status_nombre" object="${status}" z="wLgd9Q0/4BDT7LgD9qhLYYMJ+V4="/>
+        <field:display field="descripcion" id="s_com_raze_cancha_reference_Status_descripcion" object="${status}" z="aMbpMVxFmmVtXQFgHRWeCp6pX28="/>
+        <field:display date="true" dateTimePattern="${status_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_cancha_reference_Status_fechaCreacion" object="${status}" z="mxRlzTLrnuPVuPwzClpXPIhDjck="/>
+        <field:display date="true" dateTimePattern="${status_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_cancha_reference_Status_fechaModificacion" object="${status}" z="TIj/yT5UVyuDPC3PIUfv3gFuS4M="/>
+    </page:show>
+</div>

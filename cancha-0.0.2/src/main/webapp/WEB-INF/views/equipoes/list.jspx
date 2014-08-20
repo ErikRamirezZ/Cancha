@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_cancha_domain_Equipo" items="${equipoes}" z="yAWoHko2z0+eyaMXRiwjiOpZNc0=">
+        <table:table data="${equipoes}" id="l_com_raze_cancha_domain_Equipo" path="/equipoes" z="URHSqM+bHefMftCy7OF+DdgwWtI=">
+            <table:column id="c_com_raze_cancha_domain_Equipo_idSucursal" property="idSucursal" z="lhgLTHCXGjikNPxTm7wGs+RTkIU="/>
+            <table:column id="c_com_raze_cancha_domain_Equipo_nombre" property="nombre" z="XF9m8ZdULIX4SGCL5pz0X1NLRyk="/>
+            <table:column id="c_com_raze_cancha_domain_Equipo_nombreCorto" property="nombreCorto" z="UZHohuFEgxyP5xMJ9NvM1XScnF0="/>
+            <table:column id="c_com_raze_cancha_domain_Equipo_nombreLargo" property="nombreLargo" z="r3E5aA6U8VyVTXDJSLBY0CAZM8I="/>
+            <table:column id="c_com_raze_cancha_domain_Equipo_logo" property="logo" z="/DV+7fz2eoEqYDDxMGsl6eOo2As="/>
+            <table:column id="c_com_raze_cancha_domain_Equipo_status" property="status" z="hWLYfgyCHCvZSKjxwm4KtmCkNUs="/>
+        </table:table>
+    </page:list>
+</div>

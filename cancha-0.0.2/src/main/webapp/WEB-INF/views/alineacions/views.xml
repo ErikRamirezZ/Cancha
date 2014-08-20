@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="alineacions/list">
+        <put-attribute name="body" value="/WEB-INF/views/alineacions/list.jspx"/>
+    </definition>
+<definition extends="default" name="alineacions/show">
+        <put-attribute name="body" value="/WEB-INF/views/alineacions/show.jspx"/>
+    </definition>
+<definition extends="default" name="alineacions/create">
+        <put-attribute name="body" value="/WEB-INF/views/alineacions/create.jspx"/>
+    </definition>
+<definition extends="default" name="alineacions/update">
+        <put-attribute name="body" value="/WEB-INF/views/alineacions/update.jspx"/>
+    </definition>
+<definition extends="default" name="alineacions/findAlineacionsByIdPartido">
+        <put-attribute name="body" value="/WEB-INF/views/alineacions/findAlineacionsByIdPartido.jspx"/>
+    </definition>
+</tiles-definitions>

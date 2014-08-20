@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_cancha_reference_Modulo" items="${moduloes}" z="u4VtemumNggZ+twYMLkqyWeV6UY=">
+        <table:table data="${moduloes}" id="l_com_raze_cancha_reference_Modulo" path="/moduloes" z="G+DSynU5GIYQZRlp70BsAksqojw=">
+            <table:column id="c_com_raze_cancha_reference_Modulo_nombre" property="nombre" z="wb7iy7vtJViKU+fsK/+I558Pk5k="/>
+            <table:column id="c_com_raze_cancha_reference_Modulo_descripcion" property="descripcion" z="QVd8JT9k2dZGA+COTFIgZbBIN90="/>
+            <table:column date="true" dateTimePattern="${modulo_fechacreacion_date_format}" id="c_com_raze_cancha_reference_Modulo_fechaCreacion" property="fechaCreacion" z="nBYRB6VfLzUGjSixM80a7bSogV8="/>
+            <table:column date="true" dateTimePattern="${modulo_fechamodificacion_date_format}" id="c_com_raze_cancha_reference_Modulo_fechaModificacion" property="fechaModificacion" z="VQxDUrVc4AxNuqYpm4jhguks4VQ="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_domain_Empresa" object="${empresa}" path="/empresas" z="6zCCSvzAbAc53jfmZloaJYBQVhs=">
+        <field:display field="nombre" id="s_com_raze_cancha_domain_Empresa_nombre" object="${empresa}" z="HdMrNdaJ+Y6ERR9SLLvpz9znbfI="/>
+        <field:display field="nombreComercial" id="s_com_raze_cancha_domain_Empresa_nombreComercial" object="${empresa}" z="YvGwDT+ZZEhnpqvSkxq2SgSwAvI="/>
+        <field:display field="domicilio" id="s_com_raze_cancha_domain_Empresa_domicilio" object="${empresa}" z="fpTm3pMJFjK3r8ZUsX84BQ2wtpY="/>
+        <field:display field="telefono" id="s_com_raze_cancha_domain_Empresa_telefono" object="${empresa}" z="zLAbFlsvnJyNxEslT4cAGGWjpl0="/>
+        <field:display field="logo" id="s_com_raze_cancha_domain_Empresa_logo" object="${empresa}" z="+UKnxmyXAP4U0verNtlPh4ptsS0="/>
+        <field:display field="status" id="s_com_raze_cancha_domain_Empresa_status" object="${empresa}" z="vk6fM33jYuI012ESDkXmw6bFXF0="/>
+        <field:display date="true" dateTimePattern="${empresa_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_cancha_domain_Empresa_fechaCreacion" object="${empresa}" z="mDCBKSb//hMna/XLHMfRPJZdK5c="/>
+        <field:display date="true" dateTimePattern="${empresa_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_cancha_domain_Empresa_fechaModificacion" object="${empresa}" z="Xav+V/eH4nrlRyMkdFKzEpcKXWI="/>
+    </page:show>
+</div>

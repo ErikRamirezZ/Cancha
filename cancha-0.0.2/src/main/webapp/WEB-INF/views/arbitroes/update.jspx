@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_cancha_domain_Arbitro" modelAttribute="arbitro" path="/arbitroes" versionField="Version" z="TnWL9Dftj90Uo3wFu0063ihZgvU=">
+        <field:input field="nombre" id="c_com_raze_cancha_domain_Arbitro_nombre" z="nAlKQElxyS3/wDyRARHMYVgFBzY="/>
+        <field:input field="apellidoPaterno" id="c_com_raze_cancha_domain_Arbitro_apellidoPaterno" z="rNa/fohbgo9j81QrnscqbkS4h0I="/>
+        <field:input field="apellidoMaterno" id="c_com_raze_cancha_domain_Arbitro_apellidoMaterno" z="Bwgri4oYs+AzkIDtZcBg+gvVXlM="/>
+        <field:input field="edad" id="c_com_raze_cancha_domain_Arbitro_edad" z="k9MnUoFvabhBBfhCn49VOQ7tYc0="/>
+        <field:input field="domicilio" id="c_com_raze_cancha_domain_Arbitro_domicilio" z="V1qHvQjBiVdPIsuOvInfsqz/wd4="/>
+        <field:input field="telefono" id="c_com_raze_cancha_domain_Arbitro_telefono" z="jZHiEx5ayQMCER2KCRNAoUBsjW4="/>
+        <field:input field="celular" id="c_com_raze_cancha_domain_Arbitro_celular" z="1LfISRzmucSPmibv3P7/hPbnjc0="/>
+        <field:input field="correoE" id="c_com_raze_cancha_domain_Arbitro_correoE" z="IrLkLHbD0/wK4Tg9m29pMnd9lvI="/>
+        <field:select field="status" id="c_com_raze_cancha_domain_Arbitro_status" itemValue="id" items="${statuses}" path="/statuses" z="cZ8/Jmz/V+LCYu6a0V8fqi39Szc="/>
+        <field:datetime dateTimePattern="${arbitro_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_cancha_domain_Arbitro_fechaCreacion" z="lFIxsCH97GWRhudCI6THOcqd3LA="/>
+        <field:datetime dateTimePattern="${arbitro_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_cancha_domain_Arbitro_fechaModificacion" z="L4hV2w/7qmO+y1S3arJMkNeKzkc="/>
+    </form:update>
+</div>

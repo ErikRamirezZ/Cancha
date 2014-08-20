@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="estadisticaspartidoes/list">
+        <put-attribute name="body" value="/WEB-INF/views/estadisticaspartidoes/list.jspx"/>
+    </definition>
+<definition extends="default" name="estadisticaspartidoes/show">
+        <put-attribute name="body" value="/WEB-INF/views/estadisticaspartidoes/show.jspx"/>
+    </definition>
+<definition extends="default" name="estadisticaspartidoes/create">
+        <put-attribute name="body" value="/WEB-INF/views/estadisticaspartidoes/create.jspx"/>
+    </definition>
+<definition extends="default" name="estadisticaspartidoes/update">
+        <put-attribute name="body" value="/WEB-INF/views/estadisticaspartidoes/update.jspx"/>
+    </definition>
+<definition extends="default" name="estadisticaspartidoes/findEstadisticasPartidoesByIdPartido">
+        <put-attribute name="body" value="/WEB-INF/views/estadisticaspartidoes/findEstadisticasPartidoesByIdPartido.jspx"/>
+    </definition>
+<definition extends="default" name="estadisticaspartidoes/findEstadisticasPartidoesByIdPartidoAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/estadisticaspartidoes/findEstadisticasPartidoesByIdPartidoAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="estadisticaspartidoes/findEstadisticasPartidoesByStatus">
+        <put-attribute name="body" value="/WEB-INF/views/estadisticaspartidoes/findEstadisticasPartidoesByStatus.jspx"/>
+    </definition>
+</tiles-definitions>

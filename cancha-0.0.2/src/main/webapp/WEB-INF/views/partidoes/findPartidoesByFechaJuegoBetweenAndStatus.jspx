@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByFechaJuegoBetweenAndStatus" id="ff_com_raze_cancha_domain_Partido" path="/partidoes" z="Q4aMVhQiUhoYlFnwZj4loLUNB18=">
+        <field:datetime dateTimePattern="${partido_fechajuego_date_format}" disableFormBinding="true" field="minFechaJuego" id="f_com_raze_cancha_domain_Partido_minFechaJuego" required="true" z="aMbbc3wB7u8sQ8SJ4rZJGuR+EOE="/>
+        <field:datetime dateTimePattern="${partido_fechajuego_date_format}" disableFormBinding="true" field="maxFechaJuego" id="f_com_raze_cancha_domain_Partido_maxFechaJuego" required="true" z="fIJVjVqdu2WH3M1ky4n3oFLg43U="/>
+        <field:select disableFormBinding="true" field="status" id="f_com_raze_cancha_domain_Partido_status" itemValue="id" items="${statuses}" path="/statuses" required="true" z="47eu3B0trZplpV/bxeDAmeYQDQU="/>
+    </form:find>
+</div>

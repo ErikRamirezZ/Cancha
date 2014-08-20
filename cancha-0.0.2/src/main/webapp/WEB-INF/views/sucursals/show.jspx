@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_domain_Sucursal" object="${sucursal}" path="/sucursals" z="p+sUl5r3zPg29zg8ILHkYffn55A=">
+        <field:display field="idEmpresa" id="s_com_raze_cancha_domain_Sucursal_idEmpresa" object="${sucursal}" z="6EbrCnAl5S7mwJfiupSTjNxhTMY="/>
+        <field:display field="nombre" id="s_com_raze_cancha_domain_Sucursal_nombre" object="${sucursal}" z="yfGPwhu4GLhXMtclZI/IZV/dhzY="/>
+        <field:display field="domicilio" id="s_com_raze_cancha_domain_Sucursal_domicilio" object="${sucursal}" z="XaDJvcOocRhgKg9aw3XbjF6GPOE="/>
+        <field:display field="telefono" id="s_com_raze_cancha_domain_Sucursal_telefono" object="${sucursal}" z="8zlV9ohNVnrcV/kov5u1V/aqa28="/>
+        <field:display field="status" id="s_com_raze_cancha_domain_Sucursal_status" object="${sucursal}" z="WpiNW1ggIydiUS3seCKb0Eo2vho="/>
+        <field:display date="true" dateTimePattern="${sucursal_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_cancha_domain_Sucursal_fechaCreacion" object="${sucursal}" z="3a410ioR8BVoEjgZW5ZKflEt5YM="/>
+        <field:display date="true" dateTimePattern="${sucursal_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_cancha_domain_Sucursal_fechaModificacion" object="${sucursal}" z="bAOB0L0XbWIxqAZNCdwmwdsngLY="/>
+    </page:show>
+</div>

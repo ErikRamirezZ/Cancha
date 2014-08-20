@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_domain_Partido" object="${partido}" path="/partidoes" z="LwqK09HpnIooClQ5wuCJsoEE5WI=">
+        <field:display field="idCancha" id="s_com_raze_cancha_domain_Partido_idCancha" object="${partido}" z="DBhckhYa7Dioezkzk+dwwFkTAas="/>
+        <field:display field="idArbitro" id="s_com_raze_cancha_domain_Partido_idArbitro" object="${partido}" z="QJl04pLJ5YYpzQ6sXI8mSKTpkqY="/>
+        <field:display field="idTorneoEquipoLocal" id="s_com_raze_cancha_domain_Partido_idTorneoEquipoLocal" object="${partido}" z="GaY18UOQ6JauIPezCow8kM/+pTM="/>
+        <field:display field="idEquipoLocal" id="s_com_raze_cancha_domain_Partido_idEquipoLocal" object="${partido}" z="maLpAZA58BAhgRk8re30NVmmPak="/>
+        <field:display field="idTorneoEquipoVisitante" id="s_com_raze_cancha_domain_Partido_idTorneoEquipoVisitante" object="${partido}" z="EvkaQyxuxCgyNSL1R0Vk8Cfs+0o="/>
+        <field:display field="idEquipoVisitante" id="s_com_raze_cancha_domain_Partido_idEquipoVisitante" object="${partido}" z="ATQ7hmjQuzpHuPcHR6+F3bAupJE="/>
+        <field:display date="true" dateTimePattern="${partido_fechajuego_date_format}" field="fechaJuego" id="s_com_raze_cancha_domain_Partido_fechaJuego" object="${partido}" z="hYOjjTxCkBaLWvV4DmoKeM+058Q="/>
+        <field:display field="status" id="s_com_raze_cancha_domain_Partido_status" object="${partido}" z="ZrXTC9y3neJbbL8G91Qo4p7aHdg="/>
+        <field:display date="true" dateTimePattern="${partido_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_cancha_domain_Partido_fechaCreacion" object="${partido}" z="3VeJPRfDXs2yKBN52IG2K3Pk/V0="/>
+        <field:display date="true" dateTimePattern="${partido_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_cancha_domain_Partido_fechaModificacion" object="${partido}" z="rIyw5z+Fqh85a7AbEIqE++kViDk="/>
+    </page:show>
+</div>

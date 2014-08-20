@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_cancha_domain_Usuario" items="${usuarios}" z="vzHLXV+sF0xSpiuIrkeFPewoNIM=">
+        <table:table data="${usuarios}" id="l_com_raze_cancha_domain_Usuario" path="/usuarios" z="KxWqqqG9e0CUMNzpno8uJ2DBUUo=">
+            <table:column id="c_com_raze_cancha_domain_Usuario_idEmpresa" property="idEmpresa" z="iyAg+MwlYM0P+yhpXL5ghabYCgc="/>
+            <table:column id="c_com_raze_cancha_domain_Usuario_usuario" property="usuario" z="PnNoq/bFMkT7z7OBdPWdHeVriHA="/>
+            <table:column id="c_com_raze_cancha_domain_Usuario_contrasena" property="contrasena" z="ZzYzU87T3HMj6Hndljzbrlqbe+E="/>
+            <table:column id="c_com_raze_cancha_domain_Usuario_intentos" property="intentos" z="Kaa1BihrdPtCTHXYyxqBYSRLGDs="/>
+            <table:column date="true" dateTimePattern="${usuario_ultimafechaacceso_date_format}" id="c_com_raze_cancha_domain_Usuario_ultimaFechaAcceso" property="ultimaFechaAcceso" z="1F/oDEYwXfGD8t5wyGj+T9nn3JI="/>
+            <table:column id="c_com_raze_cancha_domain_Usuario_status" property="status" z="RqWOCMnZDzEaj31WB0GqiJuu59U="/>
+        </table:table>
+    </page:list>
+</div>

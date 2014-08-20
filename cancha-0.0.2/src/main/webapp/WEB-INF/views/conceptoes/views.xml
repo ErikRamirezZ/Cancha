@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="conceptoes/list">
+        <put-attribute name="body" value="/WEB-INF/views/conceptoes/list.jspx"/>
+    </definition>
+<definition extends="default" name="conceptoes/show">
+        <put-attribute name="body" value="/WEB-INF/views/conceptoes/show.jspx"/>
+    </definition>
+<definition extends="default" name="conceptoes/create">
+        <put-attribute name="body" value="/WEB-INF/views/conceptoes/create.jspx"/>
+    </definition>
+<definition extends="default" name="conceptoes/update">
+        <put-attribute name="body" value="/WEB-INF/views/conceptoes/update.jspx"/>
+    </definition>
+<definition extends="default" name="conceptoes/findConceptoesByNombreLike">
+        <put-attribute name="body" value="/WEB-INF/views/conceptoes/findConceptoesByNombreLike.jspx"/>
+    </definition>
+<definition extends="default" name="conceptoes/findConceptoesByNombreLikeAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/conceptoes/findConceptoesByNombreLikeAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="conceptoes/findConceptoesByStatus">
+        <put-attribute name="body" value="/WEB-INF/views/conceptoes/findConceptoesByStatus.jspx"/>
+    </definition>
+</tiles-definitions>

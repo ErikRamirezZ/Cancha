@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_cancha_domain_Arbitro" items="${arbitroes}" z="kKh2vtsBj8O70mZ/IWe/eq8uF8M=">
+        <table:table data="${arbitroes}" id="l_com_raze_cancha_domain_Arbitro" path="/arbitroes" z="D9Kl7/eqHn7p1GVjIz/GYfQLcFQ=">
+            <table:column id="c_com_raze_cancha_domain_Arbitro_nombre" property="nombre" z="F7h++4LPQSqUZZhrEAQ0I/wQaJ8="/>
+            <table:column id="c_com_raze_cancha_domain_Arbitro_apellidoPaterno" property="apellidoPaterno" z="wwCwpPFlTkSEqmsYLvzugv2nc6E="/>
+            <table:column id="c_com_raze_cancha_domain_Arbitro_apellidoMaterno" property="apellidoMaterno" z="clTVln3ouNWzH/BIpbfbUcbn76k="/>
+            <table:column id="c_com_raze_cancha_domain_Arbitro_edad" property="edad" z="EsFf9BzCuZv+T9qjq3LwPpVtNMU="/>
+            <table:column id="c_com_raze_cancha_domain_Arbitro_domicilio" property="domicilio" z="Py4f+oXShu4R6ZJkwooGjjZEPA8="/>
+            <table:column id="c_com_raze_cancha_domain_Arbitro_telefono" property="telefono" z="KO6iCud+UpFO8RUu7lCWXTZCTMo="/>
+        </table:table>
+    </page:list>
+</div>

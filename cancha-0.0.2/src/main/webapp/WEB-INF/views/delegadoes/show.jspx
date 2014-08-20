@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_domain_Delegado" object="${delegado}" path="/delegadoes" z="q15Kk/O49QSlQYom8o9gT2HoyRg=">
+        <field:display field="idEquipo" id="s_com_raze_cancha_domain_Delegado_idEquipo" object="${delegado}" z="Vi6w5/9RpDSuhkIM0gwA+2DI3uA="/>
+        <field:display field="nombre" id="s_com_raze_cancha_domain_Delegado_nombre" object="${delegado}" z="xYCmmN1tit2UkmBVsUBmpSBa4X0="/>
+        <field:display field="apellidoPaterno" id="s_com_raze_cancha_domain_Delegado_apellidoPaterno" object="${delegado}" z="zWIi/7UKsYSQqKoYor4AyX6wC1w="/>
+        <field:display field="apellidoMaterno" id="s_com_raze_cancha_domain_Delegado_apellidoMaterno" object="${delegado}" z="Amq3URHjbJ0hJhB2tEsPgR/uU5c="/>
+        <field:display field="domicilio" id="s_com_raze_cancha_domain_Delegado_domicilio" object="${delegado}" z="Ys+i3bZTNa/wFck2Qzb1TNyHFB4="/>
+        <field:display field="telefono" id="s_com_raze_cancha_domain_Delegado_telefono" object="${delegado}" z="pAeQ4uiYHE37/R7anMM3KoDagTY="/>
+        <field:display field="celular" id="s_com_raze_cancha_domain_Delegado_celular" object="${delegado}" z="aUJk1GipTsr90CaCiLAZipD6wWQ="/>
+        <field:display field="correoE" id="s_com_raze_cancha_domain_Delegado_correoE" object="${delegado}" z="80tw4K1evYFb5N6eGfYNS1plgMU="/>
+        <field:display field="status" id="s_com_raze_cancha_domain_Delegado_status" object="${delegado}" z="B8KtiAsXRPjObJcbQFwwAuuBtWE="/>
+        <field:display date="true" dateTimePattern="${delegado_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_cancha_domain_Delegado_fechaCreacion" object="${delegado}" z="gzQZO4Tl5CeGmVfUUNn7IoL4Lh8="/>
+        <field:display date="true" dateTimePattern="${delegado_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_cancha_domain_Delegado_fechaModificacion" object="${delegado}" z="Fw0Pn2eyab95SchDWJKu9slxCcY="/>
+    </page:show>
+</div>

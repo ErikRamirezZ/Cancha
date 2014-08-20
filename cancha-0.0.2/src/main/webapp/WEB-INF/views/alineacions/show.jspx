@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_domain_Alineacion" object="${alineacion}" path="/alineacions" z="py6PjvSvyoEPCIHEvQ1tUjEf8FQ=">
+        <field:display field="idPartido" id="s_com_raze_cancha_domain_Alineacion_idPartido" object="${alineacion}" z="A9HvNrOrtnbLDJGM7C3fWC2dP+0="/>
+        <field:display field="idJugador" id="s_com_raze_cancha_domain_Alineacion_idJugador" object="${alineacion}" z="XOVVE6YRdi0kGniR5VEVbP0UPAk="/>
+    </page:show>
+</div>

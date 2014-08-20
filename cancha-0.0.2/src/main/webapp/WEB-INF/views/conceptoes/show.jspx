@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_reference_Concepto" object="${concepto}" path="/conceptoes" z="1qfB/AVjUfkKxgds9iuATNqoFlE=">
+        <field:display field="nombre" id="s_com_raze_cancha_reference_Concepto_nombre" object="${concepto}" z="mxrsmj5QQJPguLJmNJe9WN7MjqA="/>
+        <field:display field="descripcion" id="s_com_raze_cancha_reference_Concepto_descripcion" object="${concepto}" z="b3WdWDFglJXdGO1uSNYE61/j0nU="/>
+        <field:display field="status" id="s_com_raze_cancha_reference_Concepto_status" object="${concepto}" z="zXZzZ+soJPRiICyXSuQhsW3OtTo="/>
+        <field:display date="true" dateTimePattern="${concepto_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_cancha_reference_Concepto_fechaCreacion" object="${concepto}" z="HqvqpoWwmTTH+P4dc2hrRReiBZw="/>
+        <field:display date="true" dateTimePattern="${concepto_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_cancha_reference_Concepto_fechaModificacion" object="${concepto}" z="ke9enzUGNJQRFNpmYEYlwNlBeRE="/>
+    </page:show>
+</div>

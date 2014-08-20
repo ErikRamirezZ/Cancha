@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="partidoes/list">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/list.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/show">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/show.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/create">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/create.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/update">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/update.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByFechaJuegoBetween">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByFechaJuegoBetween.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByFechaJuegoBetweenAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByFechaJuegoBetweenAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByFechaJuegoEquals">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByFechaJuegoEquals.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByIdArbitro">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByIdArbitro.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByIdCancha">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByIdCancha.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByIdCanchaAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByIdCanchaAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByIdTorneoEquipoLocal">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByIdTorneoEquipoLocal.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByIdTorneoEquipoLocalAndIdTorneoEquipoVisitante">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByIdTorneoEquipoLocalAndIdTorneoEquipoVisitante.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByIdTorneoEquipoLocalAndIdTorneoEquipoVisitanteAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByIdTorneoEquipoLocalAndIdTorneoEquipoVisitanteAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByIdTorneoEquipoLocalAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByIdTorneoEquipoLocalAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByIdTorneoEquipoVisitante">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByIdTorneoEquipoVisitante.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByIdTorneoEquipoVisitanteAndIdEquipoLocal">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByIdTorneoEquipoVisitanteAndIdEquipoLocal.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByIdTorneoEquipoVisitanteAndIdEquipoLocalAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByIdTorneoEquipoVisitanteAndIdEquipoLocalAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByIdTorneoEquipoVisitanteAndIdEquipoVisitante">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByIdTorneoEquipoVisitanteAndIdEquipoVisitante.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByIdTorneoEquipoVisitanteAndIdEquipoVisitanteAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByIdTorneoEquipoVisitanteAndIdEquipoVisitanteAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByIdTorneoEquipoVisitanteAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByIdTorneoEquipoVisitanteAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="partidoes/findPartidoesByStatus">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/findPartidoesByStatus.jspx"/>
+    </definition>
+</tiles-definitions>

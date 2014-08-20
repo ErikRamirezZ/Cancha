@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_cancha_domain_Pago" items="${pagoes}" z="pSTKgun8qu5dyi/N1qtT5dFYZ4I=">
+        <table:table data="${pagoes}" id="l_com_raze_cancha_domain_Pago" path="/pagoes" z="JBdaAYtpeEylI0QNCl0HlmxgNYM=">
+            <table:column id="c_com_raze_cancha_domain_Pago_idTorneo" property="idTorneo" z="FlW50wpPiOd2JCYt1no1sNxZmRA="/>
+            <table:column id="c_com_raze_cancha_domain_Pago_idEquipo" property="idEquipo" z="A4CY29lAxF3tMdN9nzhyFavi2vs="/>
+            <table:column id="c_com_raze_cancha_domain_Pago_idConcepto" property="idConcepto" z="Fh0kiILsGo/UdOaWLBVshi8ERO8="/>
+            <table:column id="c_com_raze_cancha_domain_Pago_monto" property="monto" z="laNW7JiAdlf9AHueDZd/OOaFXco="/>
+            <table:column id="c_com_raze_cancha_domain_Pago_status" property="status" z="L4aJX02JOar29pVdWmMhbjVQHhQ="/>
+            <table:column date="true" dateTimePattern="${pago_fechacreacion_date_format}" id="c_com_raze_cancha_domain_Pago_fechaCreacion" property="fechaCreacion" z="mXBONx64y7gg+Lzf7jc43+WUIOM="/>
+        </table:table>
+    </page:list>
+</div>

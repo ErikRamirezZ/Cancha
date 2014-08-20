@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_cancha_domain_Jugador" items="${jugadors}" z="Ja+ZXKlgZ4lfU5wpBndB0Ap6M6c=">
+        <table:table data="${jugadors}" id="l_com_raze_cancha_domain_Jugador" path="/jugadors" z="YL859+Ff5ImdkGqGLFXXtHMb4Rs=">
+            <table:column id="c_com_raze_cancha_domain_Jugador_idEquipo" property="idEquipo" z="EmYsrneHRaRVKCwme3rzNbBnQgQ="/>
+            <table:column id="c_com_raze_cancha_domain_Jugador_nombre" property="nombre" z="KPT9hywwAGZy2Ol06KB2z2uU78E="/>
+            <table:column id="c_com_raze_cancha_domain_Jugador_apellidoPaterno" property="apellidoPaterno" z="5TXyAPynp5F++5K50hW38MbSweA="/>
+            <table:column id="c_com_raze_cancha_domain_Jugador_apellidoMaterno" property="apellidoMaterno" z="J6jqaanNGU3e9PAdn0Uc4djUJPY="/>
+            <table:column id="c_com_raze_cancha_domain_Jugador_posicion" property="posicion" z="kU6qBixKCjbeRXoqR4GZM2XjKSI="/>
+            <table:column id="c_com_raze_cancha_domain_Jugador_edad" property="edad" z="r7iz7KD5kHi0BpAsn/qgro9xB7Y="/>
+        </table:table>
+    </page:list>
+</div>

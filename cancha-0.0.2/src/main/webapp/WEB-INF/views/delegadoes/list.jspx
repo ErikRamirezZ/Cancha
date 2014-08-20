@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_cancha_domain_Delegado" items="${delegadoes}" z="I5DJ9PAhERGOTUVO37JHzts6kog=">
+        <table:table data="${delegadoes}" id="l_com_raze_cancha_domain_Delegado" path="/delegadoes" z="nLqGESMnVTiCgeaAUf3L9SbN+x0=">
+            <table:column id="c_com_raze_cancha_domain_Delegado_idEquipo" property="idEquipo" z="9alHCsxj5eu8shoDWj3JJ6bLDMU="/>
+            <table:column id="c_com_raze_cancha_domain_Delegado_nombre" property="nombre" z="hFOE0PWmUpuDjzq+3/Bszapk+5Y="/>
+            <table:column id="c_com_raze_cancha_domain_Delegado_apellidoPaterno" property="apellidoPaterno" z="fBjd94RigOLh4cfJPLzb6wtfCi0="/>
+            <table:column id="c_com_raze_cancha_domain_Delegado_apellidoMaterno" property="apellidoMaterno" z="1/sF0aFAXr7v+zDsLJ7zbakh+Z4="/>
+            <table:column id="c_com_raze_cancha_domain_Delegado_domicilio" property="domicilio" z="EIl6p+rikj/80+BKrard5HXdP7E="/>
+            <table:column id="c_com_raze_cancha_domain_Delegado_telefono" property="telefono" z="67yc/cbhKR+caOUOq71Eg6dwNpA="/>
+        </table:table>
+    </page:list>
+</div>

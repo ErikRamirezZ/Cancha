@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="equipotorneos/list">
+        <put-attribute name="body" value="/WEB-INF/views/equipotorneos/list.jspx"/>
+    </definition>
+<definition extends="default" name="equipotorneos/show">
+        <put-attribute name="body" value="/WEB-INF/views/equipotorneos/show.jspx"/>
+    </definition>
+<definition extends="default" name="equipotorneos/create">
+        <put-attribute name="body" value="/WEB-INF/views/equipotorneos/create.jspx"/>
+    </definition>
+<definition extends="default" name="equipotorneos/update">
+        <put-attribute name="body" value="/WEB-INF/views/equipotorneos/update.jspx"/>
+    </definition>
+<definition extends="default" name="equipotorneos/findEquipoTorneosByIdEquipo">
+        <put-attribute name="body" value="/WEB-INF/views/equipotorneos/findEquipoTorneosByIdEquipo.jspx"/>
+    </definition>
+<definition extends="default" name="equipotorneos/findEquipoTorneosByIdEquipoAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/equipotorneos/findEquipoTorneosByIdEquipoAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="equipotorneos/findEquipoTorneosByIdTorneo">
+        <put-attribute name="body" value="/WEB-INF/views/equipotorneos/findEquipoTorneosByIdTorneo.jspx"/>
+    </definition>
+<definition extends="default" name="equipotorneos/findEquipoTorneosByIdTorneoAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/equipotorneos/findEquipoTorneosByIdTorneoAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="equipotorneos/findEquipoTorneosByStatus">
+        <put-attribute name="body" value="/WEB-INF/views/equipotorneos/findEquipoTorneosByStatus.jspx"/>
+    </definition>
+</tiles-definitions>

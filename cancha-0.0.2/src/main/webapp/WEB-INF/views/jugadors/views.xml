@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="jugadors/list">
+        <put-attribute name="body" value="/WEB-INF/views/jugadors/list.jspx"/>
+    </definition>
+<definition extends="default" name="jugadors/show">
+        <put-attribute name="body" value="/WEB-INF/views/jugadors/show.jspx"/>
+    </definition>
+<definition extends="default" name="jugadors/create">
+        <put-attribute name="body" value="/WEB-INF/views/jugadors/create.jspx"/>
+    </definition>
+<definition extends="default" name="jugadors/update">
+        <put-attribute name="body" value="/WEB-INF/views/jugadors/update.jspx"/>
+    </definition>
+<definition extends="default" name="jugadors/findJugadorsByCorreoELike">
+        <put-attribute name="body" value="/WEB-INF/views/jugadors/findJugadorsByCorreoELike.jspx"/>
+    </definition>
+<definition extends="default" name="jugadors/findJugadorsByCorreoELikeAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/jugadors/findJugadorsByCorreoELikeAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="jugadors/findJugadorsByIdEquipo">
+        <put-attribute name="body" value="/WEB-INF/views/jugadors/findJugadorsByIdEquipo.jspx"/>
+    </definition>
+<definition extends="default" name="jugadors/findJugadorsByIdEquipoAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/jugadors/findJugadorsByIdEquipoAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="jugadors/findJugadorsByNombreLikeAndApellidoPaternoLike">
+        <put-attribute name="body" value="/WEB-INF/views/jugadors/findJugadorsByNombreLikeAndApellidoPaternoLike.jspx"/>
+    </definition>
+<definition extends="default" name="jugadors/findJugadorsByNombreLikeAndApellidoPaternoLikeAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/jugadors/findJugadorsByNombreLikeAndApellidoPaternoLikeAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="jugadors/findJugadorsByStatus">
+        <put-attribute name="body" value="/WEB-INF/views/jugadors/findJugadorsByStatus.jspx"/>
+    </definition>
+</tiles-definitions>

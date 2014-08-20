@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_domain_Jugador" object="${jugador}" path="/jugadors" z="+dRO5ZOB+u/TalU/nJtCGb7wxqI=">
+        <field:display field="idEquipo" id="s_com_raze_cancha_domain_Jugador_idEquipo" object="${jugador}" z="Iefh9FsZYpQE8XPGiIut7YHNPm0="/>
+        <field:display field="nombre" id="s_com_raze_cancha_domain_Jugador_nombre" object="${jugador}" z="5s3sRYEuoa6ebmC4Wwuc/AmIfIo="/>
+        <field:display field="apellidoPaterno" id="s_com_raze_cancha_domain_Jugador_apellidoPaterno" object="${jugador}" z="vWnY3G4F5zuNwOSbVgHtCubBacU="/>
+        <field:display field="apellidoMaterno" id="s_com_raze_cancha_domain_Jugador_apellidoMaterno" object="${jugador}" z="75aU0EniZZPuThC8CKgEjw2Egw0="/>
+        <field:display field="posicion" id="s_com_raze_cancha_domain_Jugador_posicion" object="${jugador}" z="i/q2aYd5qbBwKnx7GWGgFmUtDb0="/>
+        <field:display field="edad" id="s_com_raze_cancha_domain_Jugador_edad" object="${jugador}" z="0C2soE6jwqJrCpxkWDLeBj7eiYw="/>
+        <field:display field="foto" id="s_com_raze_cancha_domain_Jugador_foto" object="${jugador}" z="9KDk+3ph+0Vm6sLbVzJr494Ghog="/>
+        <field:display field="domicilio" id="s_com_raze_cancha_domain_Jugador_domicilio" object="${jugador}" z="3umSJ9ZpsbiaZG6K8Ginq+GzdGY="/>
+        <field:display field="telefono" id="s_com_raze_cancha_domain_Jugador_telefono" object="${jugador}" z="2892NuYXJnhF4Q8R7cyExkJ+A0A="/>
+        <field:display field="correoE" id="s_com_raze_cancha_domain_Jugador_correoE" object="${jugador}" z="1Q2jM9glEYMqDzSyRKzJjR1FyDw="/>
+        <field:display field="status" id="s_com_raze_cancha_domain_Jugador_status" object="${jugador}" z="jtXp+Mro3INdoLRkcNQKTveIXQM="/>
+        <field:display date="true" dateTimePattern="${jugador_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_cancha_domain_Jugador_fechaCreacion" object="${jugador}" z="X4cINLV8IobmMnV+yvQyUwZgQvI="/>
+        <field:display date="true" dateTimePattern="${jugador_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_cancha_domain_Jugador_fechaModificacion" object="${jugador}" z="3LQn54cTHPrG26tytrN7yNdIuzU="/>
+    </page:show>
+</div>

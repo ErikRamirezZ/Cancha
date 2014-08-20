@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_cancha_domain_EstadisticasPartido" items="${estadisticaspartidoes}" z="1Rd0l546CLqqa9eJ+VeRro39Ic0=">
+        <table:table data="${estadisticaspartidoes}" id="l_com_raze_cancha_domain_EstadisticasPartido" path="/estadisticaspartidoes" z="++dowVfkv4sMC0JT+ddf68QZEf8=">
+            <table:column id="c_com_raze_cancha_domain_EstadisticasPartido_idPartido" property="idPartido" z="VTeXv2WROdWO5ECtuT1xaAoTod4="/>
+            <table:column id="c_com_raze_cancha_domain_EstadisticasPartido_marcadorEquipoLocal" property="marcadorEquipoLocal" z="YqeKQEiSnivhrBKoY8A0KSQKxo4="/>
+            <table:column id="c_com_raze_cancha_domain_EstadisticasPartido_marcadorEquipoVisitante" property="marcadorEquipoVisitante" z="m8xyk+JO7t0d3uKASUB8IvMnU6Y="/>
+            <table:column id="c_com_raze_cancha_domain_EstadisticasPartido_observaciones" property="observaciones" z="9onVE2Sv/d7vJrtlPJ4hdfJMMQI="/>
+            <table:column id="c_com_raze_cancha_domain_EstadisticasPartido_status" property="status" z="zFWhFISfbE9Fqs9WzSDtZjm9Y04="/>
+            <table:column date="true" dateTimePattern="${estadisticasPartido_fechacreacion_date_format}" id="c_com_raze_cancha_domain_EstadisticasPartido_fechaCreacion" property="fechaCreacion" z="khx9ZqPTO81z94LiMH/DQoucuAA="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:spring="http://www.springframework.org/tags"
+	xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+	<menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+
+		<li id="menu">
+			<h2>Menu</h2>
+		</li>
+
+		<spring:url var="icono_partido"
+			value="/resources/images/icono_partido.png" />
+		<spring:url var="url_partido"
+			value="/partidoes?page=1&amp;size=${empty param.size ? 10 : param.size}" />
+		<div>
+			<a href="${url_partido}" name="Partidos" title="Partidos"> <img
+				src="${icono_partido}" height="40px" width="40px" /> Partido
+			</a>
+		</div>
+
+		<spring:url var="icono_pago" value="/resources/images/icono_pago.png" />
+		<spring:url var="url_pago"
+			value="/pagoes?page=1&amp;size=${empty param.size ? 10 : param.size}" />
+		<div>
+			<a href="${url_pago}" name="Pagos" title="Pagos"> <img
+				src="${icono_pago}" height="40px" width="40px" /> Pago
+			</a>
+		</div>
+
+		<spring:url var="icono_jugador"
+			value="/resources/images/icono_jugador.png" />
+		<spring:url var="url_jugador"
+			value="/jugadors?page=1&amp;size=${empty param.size ? 10 : param.size}" />
+		<div>
+			<a href="${url_jugador}" name="Jugadores" title="Jugadores"> <img
+				src="${icono_jugador}" height="40px" width="40px" /> Jugador
+			</a>
+		</div>
+
+		<spring:url var="icono_equipo"
+			value="/resources/images/icono_equipo.png" />
+		<spring:url var="url_equipo"
+			value="/equipoes?page=1&amp;size=${empty param.size ? 10 : param.size}" />
+		<div>
+			<a href="${url_equipo}" name="Equipos" title="Equipos"> <img
+				src="${icono_equipo}" height="40px" width="40px" /> Equipo
+			</a>
+		</div>
+
+		<spring:url var="icono_delegado"
+			value="/resources/images/icono_delegado.png" />
+		<spring:url var="url_delegado"
+			value="/delegadoes?page=1&amp;size=${empty param.size ? 10 : param.size}" />
+		<div>
+			<a href="${url_delegado}" name="Delegados" title="Delegados"> <img
+				src="${icono_delegado}" height="40px" width="40px" /> Delegados
+			</a>
+		</div>
+
+		<spring:url var="icono_arbitro"
+			value="/resources/images/icono_arbitro.png" />
+		<spring:url var="url_arbitro"
+			value="/arbitroes?page=1&amp;size=${empty param.size ? 10 : param.size}" />
+		<div>
+			<a href="${url_arbitro}" name="Arbitros" title="Arbtiros"> <img
+				src="${icono_arbitro}" height="40px" width="40px" /> Arbitro
+			</a>
+		</div>
+
+		<spring:url var="icono_torneo"
+			value="/resources/images/icono_torneo.png" />
+		<spring:url var="url_torneo"
+			value="/torneos?page=1&amp;size=${empty param.size ? 10 : param.size}" />
+		<div>
+			<a href="${url_torneo}" name="Torneos" title="Torneos"> <img
+				src="${icono_torneo}" height="40px" width="40px" /> Torneo
+			</a>
+		</div>
+
+	</menu:menu>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_domain_Cancha" object="${cancha}" path="/canchas" z="otwyJjudrlptv1447Nu2nFSAhpU=">
+        <field:display field="idSucursal" id="s_com_raze_cancha_domain_Cancha_idSucursal" object="${cancha}" z="xxUMS6TdgPdI1WdbiZxopuFxsMY="/>
+        <field:display field="nombre" id="s_com_raze_cancha_domain_Cancha_nombre" object="${cancha}" z="vYnIqpNhA0jWt+7uUkxHeH4rH2w="/>
+        <field:display field="descripcion" id="s_com_raze_cancha_domain_Cancha_descripcion" object="${cancha}" z="rBuCC2SV+AlsnMIMATocffLhZD4="/>
+        <field:display field="status" id="s_com_raze_cancha_domain_Cancha_status" object="${cancha}" z="lKwRpSZOrrPjwB8+WRDxg5r/lBo="/>
+        <field:display date="true" dateTimePattern="${cancha_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_cancha_domain_Cancha_fechaCreacion" object="${cancha}" z="C7ZzMCs0l98mQMZgyOC5ul25S2s="/>
+        <field:display date="true" dateTimePattern="${cancha_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_cancha_domain_Cancha_fechaModificacion" object="${cancha}" z="z2TEj8Ee24eqOayqla/X18CpMlQ="/>
+    </page:show>
+</div>

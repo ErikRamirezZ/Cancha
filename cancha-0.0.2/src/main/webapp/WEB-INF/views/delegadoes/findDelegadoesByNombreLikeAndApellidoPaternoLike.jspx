@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByNombreLikeAndApellidoPaternoLike" id="ff_com_raze_cancha_domain_Delegado" path="/delegadoes" z="v6qIqhdnylZ4Xtcv66LsEO4VucY=">
+        <field:input disableFormBinding="true" field="nombre" id="f_com_raze_cancha_domain_Delegado_nombre" required="true" z="93hgBFo63zI4YFYJzvRfkdBSVuo="/>
+        <field:input disableFormBinding="true" field="apellidoPaterno" id="f_com_raze_cancha_domain_Delegado_apellidoPaterno" required="true" z="gOvG2BmxNc2lBTCLJoUlFUV6xmM="/>
+    </form:find>
+</div>

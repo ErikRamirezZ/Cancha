@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_cancha_reference_Concepto" items="${conceptoes}" z="gHur1eDngkcx1EsIQjk5KpWZEjA=">
+        <table:table data="${conceptoes}" id="l_com_raze_cancha_reference_Concepto" path="/conceptoes" z="UpLE/oBvwEWobePoqaee5p+FDyk=">
+            <table:column id="c_com_raze_cancha_reference_Concepto_nombre" property="nombre" z="4SkHpAJ6kgEnxzl9R2sF2+04VAQ="/>
+            <table:column id="c_com_raze_cancha_reference_Concepto_descripcion" property="descripcion" z="M/rvMJL8c3B2AwipBAmT9QQPhkY="/>
+            <table:column id="c_com_raze_cancha_reference_Concepto_status" property="status" z="0itnPQizZ3HzZ3XZc+ZWSr+bIDs="/>
+            <table:column date="true" dateTimePattern="${concepto_fechacreacion_date_format}" id="c_com_raze_cancha_reference_Concepto_fechaCreacion" property="fechaCreacion" z="umkQSw5lI5KNHwvUndBHi/NqZrc="/>
+            <table:column date="true" dateTimePattern="${concepto_fechamodificacion_date_format}" id="c_com_raze_cancha_reference_Concepto_fechaModificacion" property="fechaModificacion" z="B0GJ+5dRT9L3TRx8WDxcnW3eyHU="/>
+        </table:table>
+    </page:list>
+</div>

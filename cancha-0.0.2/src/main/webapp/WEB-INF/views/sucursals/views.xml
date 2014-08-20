@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="sucursals/list">
+        <put-attribute name="body" value="/WEB-INF/views/sucursals/list.jspx"/>
+    </definition>
+<definition extends="default" name="sucursals/show">
+        <put-attribute name="body" value="/WEB-INF/views/sucursals/show.jspx"/>
+    </definition>
+<definition extends="default" name="sucursals/create">
+        <put-attribute name="body" value="/WEB-INF/views/sucursals/create.jspx"/>
+    </definition>
+<definition extends="default" name="sucursals/update">
+        <put-attribute name="body" value="/WEB-INF/views/sucursals/update.jspx"/>
+    </definition>
+<definition extends="default" name="sucursals/findSucursalsByIdEmpresaAndStatus">
+        <put-attribute name="body" value="/WEB-INF/views/sucursals/findSucursalsByIdEmpresaAndStatus.jspx"/>
+    </definition>
+<definition extends="default" name="sucursals/findSucursalsByStatus">
+        <put-attribute name="body" value="/WEB-INF/views/sucursals/findSucursalsByStatus.jspx"/>
+    </definition>
+</tiles-definitions>

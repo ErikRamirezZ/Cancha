@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_cancha_domain_Empresa" items="${empresas}" z="n2/i9CsyKarXWt6mi+gTRczkSnw=">
+        <table:table data="${empresas}" id="l_com_raze_cancha_domain_Empresa" path="/empresas" z="eNBnIJI7Xs178bnSMicAdvDMYRU=">
+            <table:column id="c_com_raze_cancha_domain_Empresa_nombre" property="nombre" z="bQKXRLcnhqA7k58WYBVojOANxRs="/>
+            <table:column id="c_com_raze_cancha_domain_Empresa_nombreComercial" property="nombreComercial" z="TchH5OyZmmUZd6jJM5UdekwmZhk="/>
+            <table:column id="c_com_raze_cancha_domain_Empresa_domicilio" property="domicilio" z="ykMvFyfWNiRgT2kbRWlsk/i3SBM="/>
+            <table:column id="c_com_raze_cancha_domain_Empresa_telefono" property="telefono" z="arfAEUAAPoeDI6q2VQiv+daKgGg="/>
+            <table:column id="c_com_raze_cancha_domain_Empresa_logo" property="logo" z="uVaeCOk4mBD+IpUaMiWjHLt7tkg="/>
+            <table:column id="c_com_raze_cancha_domain_Empresa_status" property="status" z="TahdXgww7kpkA9XXxQ5tfyi0hWM="/>
+        </table:table>
+    </page:list>
+</div>

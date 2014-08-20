@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByFechaCreacionEqualsAndStatus" id="ff_com_raze_cancha_domain_Incidencia" path="/incidencias" z="89lFy3HuTTg5iXOAIueLXT81Mqo=">
+        <field:datetime dateTimePattern="${incidencia_fechacreacion_date_format}" disableFormBinding="true" field="fechaCreacion" id="f_com_raze_cancha_domain_Incidencia_fechaCreacion" required="true" z="zZOEl4M6GuKU9mTS2ANus5pwEcA="/>
+        <field:select disableFormBinding="true" field="status" id="f_com_raze_cancha_domain_Incidencia_status" itemValue="id" items="${statuses}" path="/statuses" required="true" z="0x3HvIbCrFs3uYzoYSv0tRdwXxw="/>
+    </form:find>
+</div>

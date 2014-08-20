@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_cancha_domain_Jugador" modelAttribute="jugador" path="/jugadors" versionField="Version" z="cbI9YPd6VdejntEd81kHtfbYEYY=">
+        <field:select field="idEquipo" id="c_com_raze_cancha_domain_Jugador_idEquipo" itemValue="id" items="${equipoes}" path="/equipoes" z="L0o0J4JBcHzLivvPeSas1hvRfBk="/>
+        <field:input field="nombre" id="c_com_raze_cancha_domain_Jugador_nombre" z="lY4cALliDjXiERV+QiJku/DeoKY="/>
+        <field:input field="apellidoPaterno" id="c_com_raze_cancha_domain_Jugador_apellidoPaterno" z="Rf5cQMchjVNxqa+VEW2D+S9GduE="/>
+        <field:input field="apellidoMaterno" id="c_com_raze_cancha_domain_Jugador_apellidoMaterno" z="tVkKmMJU1l+lZcF8sPvkXSeGJwo="/>
+        <field:input field="posicion" id="c_com_raze_cancha_domain_Jugador_posicion" z="AOCXDwH0UsYInLWK/spzFy1Vrrw="/>
+        <field:input field="edad" id="c_com_raze_cancha_domain_Jugador_edad" z="mqq5AsuLOw+K0j86vE07dmvrmMs="/>
+        <field:textarea field="foto" id="c_com_raze_cancha_domain_Jugador_foto" z="KyMNqLOD1NdDoYFK/pxy3zE/yLI="/>
+        <field:input field="domicilio" id="c_com_raze_cancha_domain_Jugador_domicilio" z="HqR/tlS58Zsjb5OePVgkiZeP/To="/>
+        <field:input field="telefono" id="c_com_raze_cancha_domain_Jugador_telefono" z="shQCs9GL07Q24OcCfpoNc6v7gDk="/>
+        <field:input field="correoE" id="c_com_raze_cancha_domain_Jugador_correoE" z="Iz1Mv9RloadtaHDv/1hxQQK7Cus="/>
+        <field:select field="status" id="c_com_raze_cancha_domain_Jugador_status" itemValue="id" items="${statuses}" path="/statuses" z="6BGl8RCHreDRtNWl5kPQ0Xc1qDA="/>
+        <field:datetime dateTimePattern="${jugador_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_cancha_domain_Jugador_fechaCreacion" z="2ONlarkT66dIAKAZJt52KCmO25k="/>
+        <field:datetime dateTimePattern="${jugador_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_cancha_domain_Jugador_fechaModificacion" z="Zu2d2QzBCxzesbpF/aRQLOyOLyY="/>
+    </form:update>
+</div>

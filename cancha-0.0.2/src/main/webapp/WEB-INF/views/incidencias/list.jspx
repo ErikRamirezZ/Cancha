@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_cancha_domain_Incidencia" items="${incidencias}" z="YXGKAvKiAygc/jbLQsCRT0lZoZg=">
+        <table:table data="${incidencias}" id="l_com_raze_cancha_domain_Incidencia" path="/incidencias" z="141NUP2+2trTtpo/AxWkl7u0o0E=">
+            <table:column id="c_com_raze_cancha_domain_Incidencia_idSucursal" property="idSucursal" z="GE6fQkqYxsCHya2ucr7kG5rVCGw="/>
+            <table:column id="c_com_raze_cancha_domain_Incidencia_idUsuario" property="idUsuario" z="hptAluDshzOos1jRwAK/prGieDU="/>
+            <table:column id="c_com_raze_cancha_domain_Incidencia_observaciones" property="observaciones" z="QgeeGNqQOIRpG2urtq57XoBPaXY="/>
+            <table:column id="c_com_raze_cancha_domain_Incidencia_status" property="status" z="9OZ/tu3xzu4byM2eK3WMO/4NjxQ="/>
+            <table:column date="true" dateTimePattern="${incidencia_fechacreacion_date_format}" id="c_com_raze_cancha_domain_Incidencia_fechaCreacion" property="fechaCreacion" z="/utGLkJjcsGhP5RfdQlgWqkPF+w="/>
+            <table:column date="true" dateTimePattern="${incidencia_fechamodificacion_date_format}" id="c_com_raze_cancha_domain_Incidencia_fechaModificacion" property="fechaModificacion" z="qcaXXEv3kZysjJmNokN4jpnapwA="/>
+        </table:table>
+    </page:list>
+</div>

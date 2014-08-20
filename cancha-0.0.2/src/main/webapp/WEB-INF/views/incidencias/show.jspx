@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_cancha_domain_Incidencia" object="${incidencia}" path="/incidencias" z="By6YpYMEDwaJmk8jb0yNRR64kXo=">
+        <field:display field="idSucursal" id="s_com_raze_cancha_domain_Incidencia_idSucursal" object="${incidencia}" z="G3gtKJknb99HJ8WLHHDuynky7vY="/>
+        <field:display field="idUsuario" id="s_com_raze_cancha_domain_Incidencia_idUsuario" object="${incidencia}" z="UCCDnnSZEm7lASC140lJe4fB1IU="/>
+        <field:display field="observaciones" id="s_com_raze_cancha_domain_Incidencia_observaciones" object="${incidencia}" z="DaYT3do1Xhf3rj90R+m31tAYQvU="/>
+        <field:display field="status" id="s_com_raze_cancha_domain_Incidencia_status" object="${incidencia}" z="AFYhjUgychNIqxMjVLVHXDGtAbo="/>
+        <field:display date="true" dateTimePattern="${incidencia_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_cancha_domain_Incidencia_fechaCreacion" object="${incidencia}" z="yDkTsqQhAfHJW67ds082HpNPZWI="/>
+        <field:display date="true" dateTimePattern="${incidencia_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_cancha_domain_Incidencia_fechaModificacion" object="${incidencia}" z="yE1Hx2PzWCjp/Ft09tycE8aaWbE="/>
+    </page:show>
+</div>
