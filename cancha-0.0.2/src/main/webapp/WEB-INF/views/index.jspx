@@ -23,10 +23,10 @@
       </a>
     </div>
     <div class="btnMenuPrincipal">
-      Partido
+      <spring:message code="label_com_raze_cancha_domain_partido" />
     </div>
     <div class="btnMenuPrincipal">
-      Estadisticas
+      <spring:message code="label_com_raze_cancha_domain_estadisticaspartido" />
     </div>
     
   </util:panel>
@@ -53,14 +53,21 @@
      		 		content: {idEmpresa:1,status:1},
      		    handleAs: "json",
      		    load: function(sucursales){
-     		    	dijit.byId("dialogContent").innerHTML += "Prueba de pintura de texto";
-							//array.forEach(sucursales, function(item, i){
-     		    		//dijit.byId("dialogContent").innerHTML = i++ + item.id + item.nombre;
-     		    		//dijit.byId("f_com_raze_cancha_domain_Sucursal").addOption({ label: item.id , value: item.nombre });
-     		    	//});
+							var node0 = dojo.byId("dialogContent");
+							node0.innerHTML += "\nPrueba de pintura de texto";
+     		    	var node1 = dojo.byId("testText");
+     		    	node1.innerHTML += "\nPrueba de pintura de texto" + sucursales[0].domicilio;
+     		    	alert("SI funciona");
+     		    	
+     		    	for (var i in sucursales) {
+     		    		console.log(sucursales[i].domicilio); 
+     		    		console.log(sucursales[i].fechaCreacion);
+     		    		console.log(sucursales[i].fechaModificacion);
+     		    		console.log(sucursales[i].idEmpresa);
+							}
      		    },
      		    error: function(error){
-     		    	dijit.byId("dialogSelectSucursal").innerHTML = "An unexpected error occurred: " + error;
+     		    	/* dijit.byId("dialogSelectSucursal").innerHTML = "An unexpected error occurred: " + error; */
      		    }
    		  }
        	dojo.xhrPost(xhrArgs);    		
@@ -70,5 +77,5 @@
     	dojo.ready(testAjax);    	
    	</script>
   </c:if>
-  
+  <div id="testText">Aqui debe de ir mas Texto</div>
 </div>
